@@ -6,12 +6,11 @@
     ~1/24/24
 """
 
-# Annotate variables and constants
-CURRENT_YEAR: int
+# Annotate the variables and constants.
+CURRENT_YEAR: int = 2024
+
 birth_year: int
 age: int
-
-CURRENT_YEAR = 2024
 
 # Obtain the user's birth year.
 birth_year = int(input("Please enter your birth year: "))
