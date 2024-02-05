@@ -1,6 +1,6 @@
 """
-    29. Write a program that asks the user to enter a whole number of months
-    as input and then converts that amount of time to years and months.
+    Calculate's the user's CD interest rate given their tax bracket 
+    (as decimal) and interest rate (as percent). 
 
     Tyler
     2/5/24
