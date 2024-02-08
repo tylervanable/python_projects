@@ -17,20 +17,20 @@ vehicle: str
 animal: str
 person: str
 
-# Obtain the value of the variables from the user.
+# Obtain the words from the user that will be inserted into the mad-lib.
 adjective = input("Please input an adjective: ")
-first_food = input("Please input a food (plural): ")
+animal = input("Please input an animal: ")
+vehicle = input("Please input something you would ride in: ")
 verb = input("Please input a verb: ")
-saying = input("Please input a saying: ")
+color = input("Please input a color: ")
 noun = input("Please input a noun: ")
 second_food = input("Please input another food (plural): ")
-color = input("Please input a color: ")
-vehicle = input("Please input something you would ride in: ")
-animal = input("Please input an animal: ")
+first_food = input("Please input a food (plural): ")
 person = input("Please input a person: ")
+saying = input("Please input a saying: ")
 
 # Display the mad-lib to the user.
 print("Today I went to my favorite Taco Stand called the {} {}. Unlike most food stands,".format(adjective,animal))
 print("they cook and prepare the food in a {} while you {}. The best thing on the menu is the {} {}.".format(vehicle, verb, color, noun))
-print("Instead of ground beef, they fill the taco with {}, cheese, and top it off with a salsa made from".format(second_food))
-print("{} If that doesn't make your mouth water, then it's just like {} always says: {}!".format(first_food,person,saying))
+print("Instead of ground beef, they fill the taco with {}, cheese, and top it off with a salsa made from {}".format(second_food,first_food))
+print("If that doesn't make your mouth water, then it's just like {} always says: {}!".format(person,saying))
