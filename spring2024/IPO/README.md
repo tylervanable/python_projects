@@ -7,4 +7,5 @@ The following are Input Processing Output programs, some using Python's math lib
 - 'magic_mile.py': IPO that calculates the amount of hours it will take to run a marathon. Requires user to input how many seconds it takes to run a mile. Will output the amount of hours.
 - 'per_second_per_day': IPO that converts a rate of per seconds to per days.
 - 'months_to_years': IPO that converts a total amount of months to years and months. Application of div and mod.
-- 'cd_interest_rate_conversion': IPO that calculates the user's CD interest rate. 
+- 'cd_interest_rate_conversion': IPO that calculates the user's CD interest rate.
+- 'mad_lib.py': IPO that displays a mad-lib story after collecting words from the user. 
