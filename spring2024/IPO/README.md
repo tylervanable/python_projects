@@ -8,4 +8,5 @@ The following are Input Processing Output programs, some using Python's math lib
 - 'per_second_per_day': IPO that converts a rate of per seconds to per days.
 - 'months_to_years': IPO that converts a total amount of months to years and months. Application of div and mod.
 - 'cd_interest_rate_conversion': IPO that calculates the user's CD interest rate.
-- 'mad_lib.py': IPO that displays a mad-lib story after collecting words from the user. 
+- 'mad_lib.py': IPO that displays a mad-lib story after collecting words from the user.
+- 'planet_weight_table.py': IPO that requests a weight from the user and displays a table of the converted weight on the planets in our solar system. 
