@@ -21,7 +21,6 @@ PLUTO_WEIGHT: float = 0.06
 # Annotate the variables.
 weight: float
 planet_weight: float
-valid_planet: bool = True
  
 # Obtain the weight and planet from the user.
 weight = float(input("What is the weight you want to convert? "))
