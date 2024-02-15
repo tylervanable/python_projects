@@ -52,7 +52,7 @@ else:
 if valid_planet:
     print("The weight on {} is {:.2f}.".format(planet_name,planet_weight))
 else:
-     print("Never heard of her...")
+     print("Never heard of this planet...")
 
 
 
