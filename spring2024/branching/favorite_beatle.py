@@ -1,6 +1,6 @@
 """
 Example of a SERIES IF program. - because every expression mutually exclusive
-Write a program that asks the user their favoriteBeatle.
+Write a program that asks the user their favorite member of the Beatles.
 Print an appropriate message for each Beatle
 
 <Paul, Ringo, John, George, Pete, Stu>
