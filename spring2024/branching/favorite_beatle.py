@@ -1,5 +1,5 @@
 """
-Example of a SERIES IF program. - because no expression mutually exclusive
+Example of a SERIES IF program. - because every expression mutually exclusive
 Write a program that asks the user their favoriteBeatle.
 Print an appropriate message for each Beatle
 
