@@ -7,5 +7,5 @@ The following are branching programs, some using the random library:
 * 'nested_pet_preference'
 * 'planet_weight': IPO program that requests a weight and planet from the user. It uses branching to calculate the weight.
 * 'pizza_n_tacos': IPO program that requests a number of pizzas and tacos. Uses 'if-elif-else' structure to compare the two numbers. Outputs include whether there are more pizzas than tacos, more tacos than pizzas, or an equal amount of pizzas and tacos.
-* 'quiz1_final_grade_calc'
-* 'voting_age'
+* 'quiz1_final_grade_calc': 
+* 'voting_age': 
