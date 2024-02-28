@@ -24,5 +24,5 @@ elif favorite_beatle == "JOHN":
     print("John died too young")
 elif favorite_beatle == "GEORGE":
     print("George was a great guitarist.")
-else favorite_beatle == "PETE" or favorite_beatle == "STU":
+elif favorite_beatle == "PETE" or favorite_beatle == "STU":
     print("I don't know that Beatle member...")
