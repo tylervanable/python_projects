@@ -19,10 +19,3 @@ for i in range(terms):
 
 print("Your approximate value of pi with {:d} terms is {:.5f}"
       .format(terms,accumulate))
-
-
-# main changes:
-# added for loop instead of while
-# got rid of denom variable, but added sign variable to switch approximation each time.
-# Added 1 + 2*i because we start with 1/1, and every time for we take an "i" step,
-# taking an "i" step is multiplied by 2 because we keep adding tw
