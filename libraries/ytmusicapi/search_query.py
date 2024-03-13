@@ -3,8 +3,8 @@ Display a list of search results utilizing the ytmusicapi library.
 
 Tyler
 """
-search_results: str
 search: str
+search_results: str
 
 # Import and initialize Youtube Music API 
 from ytmusicapi import YTMusic
