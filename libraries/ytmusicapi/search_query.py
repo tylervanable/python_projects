@@ -1,7 +1,8 @@
 """
-Display a list of search results utilizing the ytmusicapi library.
+      Ask the user for a search query and display a list of one 
+      search result utilizing the ytmusicapi library.
 
-Tyler
+      Tyler
 """
 search: str
 search_results: str
