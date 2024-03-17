@@ -18,7 +18,7 @@ file_counter: typing.TextIO
 text_file_name: str
 text_file_lines: int = 0
 line: str = ""
-line_content_accumulator: str = ""
+line_accumulator: str = ""
 num_sentences: int = 0
 num_words: int = 0
 num_characters: int = 0
@@ -31,13 +31,13 @@ if os.path.isfile(text_file_name):
       file_counter = open(text_file_name, "r")
       for i in range(text_file_lines):
             line = file_counter.readline()
-            line_content_accumulator += line
+            line_accumulator += line
 
       # Read the file and tokenize for the number of sentences, words, and characters.
 
-      num_sentences = len(sent_tokenize(line_content_accumulator))
-      num_words = len(word_tokenize(line_content_accumulator))
-      num_characters = len(line_content_accumulator)
+      num_sentences = len(sent_tokenize(line_accumulator))
+      num_words = len(word_tokenize(line_accumulator))
+      num_characters = len(line_accumulator)
 
       # Print the amount of sentences, words, and characters in the text file. 
       print("\nThe number of sentences in the text is: {}"
