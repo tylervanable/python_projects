@@ -33,11 +33,11 @@ if os.path.isfile(text_file_name):
       num_characters = len(text_file)
 
       # Print the amount of sentences, words, and characters in the text file. 
-      print("\nThe number of sentences in the text is: {}"
+      print("\nThe number of sentences in the text file is: {}"
             .format(num_sentences))
-      print("\nThe number of words in the text is: {}"
+      print("\nThe number of words in the text file is: {}"
             .format(num_words))
-      print("\nThe number of characters in the text is: {}"
+      print("\nThe number of characters in the text file is: {}"
             .format(num_characters))
     
 else:
