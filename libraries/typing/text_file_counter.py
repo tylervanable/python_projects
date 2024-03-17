@@ -1,6 +1,9 @@
 """
     Determine how many sentences, words, and characters a text 
     file that the user inputs contains. 
+
+    <sidenote>: this program requests from the user how many lines 
+    the text file has and also uses an accumulator variable.
 """
 
 import typing
