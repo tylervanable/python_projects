@@ -27,25 +27,25 @@ num_characters: int = 0
 text_file_name = input("Please enter the name of the text file: ")
 text_file_lines = int(input("Please enter the number of lines in the text file: "))
 
+# Read the file that the user provided. Accumulate the lines that are read into a variable. 
 if os.path.isfile(text_file_name):
       file_counter = open(text_file_name, "r")
       for i in range(text_file_lines):
             line = file_counter.readline()
             line_accumulator += line
 
-      # Read the file and tokenize for the number of sentences, words, and characters.
-
+      # Tokenize the accumulator for the number of sentences, words, and characters.
       num_sentences = len(sent_tokenize(line_accumulator))
       num_words = len(word_tokenize(line_accumulator))
       num_characters = len(line_accumulator)
 
       # Print the amount of sentences, words, and characters in the text file. 
-      print("\nThe number of sentences in the text is: {}"
-            .format(num_sentences))
-      print("\nThe number of words in the text is: {}"
-            .format(num_words))
-      print("\nThe number of characters in the text is: {}"
-            .format(num_characters))
+      print("\nThe number of sentences in {} is: {}"
+            .format(text_file_name,num_sentences))
+      print("\nThe number of words in {} is: {}"
+            .format(text_file_name,num_words))
+      print("\nThe number of characters in {} is: {}"
+            .format(text_file_name,num_characters))
     
 else:
       print("The file does not exist. Please try again.")
