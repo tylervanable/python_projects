@@ -3,7 +3,7 @@
     file that the user inputs contains. 
 
     <sidenote>: this program uses "with"-"as" structure for easier 
-    resource management.
+    resource management. 
 """
 
 import typing
