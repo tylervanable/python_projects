@@ -1,6 +1,9 @@
 """
     Determine how many sentences, words, and characters a text 
     file that the user inputs contains. 
+
+    <sidenote>: this program uses "with"-"as" structure for easier 
+    resource management.
 """
 
 import typing
@@ -17,13 +20,13 @@ num_sentences: int
 num_words: int
 num_characters: int
 
-# Obtain text file name from the user, else print logging message.
+# Obtain text file name from the user, else print logging message, and read the file.
 text_file_name = input("Please enter the name of the text file: ")
 if os.path.isfile(text_file_name):
       with open(text_file_name, "r") as file_counter:
             text_file = file_counter.read()
 
-      # Read the file and tokenize for the number of sentences, words, and characters.
+      # Tokenize the text file for the number of sentences, words, and characters.
 
       num_sentences = len(sent_tokenize(text_file))
       num_words = len(word_tokenize(text_file))
