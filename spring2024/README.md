@@ -1,5 +1,5 @@
 # Overview
-Collection of Python projects from Spring 2024 at CCRI. 
+The following is collection of Python projects from my introductory programming class during Spring 2024:
 
 Project scripts include turtle, IPO, and branching programs. Scripts later include looping, function implementation, and lists. 
 
