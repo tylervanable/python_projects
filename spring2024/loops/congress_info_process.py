@@ -4,7 +4,10 @@
         State name
         number of congressional representatives
         rounded state population
-    We assume that all records are complete with two data points per state
+    We assume that all records are complete with two data points per state.
+
+    Tyler
+    3/20/24
 """
 
 import io
