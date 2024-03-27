@@ -43,12 +43,3 @@ for suit in range(1,5):
         print("{} of {}".format(card_num_str, suit_str))
         card_num += 1
     suit += 1
-
-
-
-if card_num == 11:
-    card_num_str = "Jack"
-if card_num == 12:
-    card_num_str = "Queen"
-if card_num == 13:
-    card_num_str = "King"
