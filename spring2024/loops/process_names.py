@@ -1,8 +1,8 @@
 """
     Process a file of names.
 
-    Re factoring is when you copy and paste a file and change names of variables
-
+    Tyler
+    3/20/24
 """
 
 
