@@ -9,4 +9,4 @@ The following are input processing output (IPO) programs, some using Python's ma
 - 'months_to_years': IPO that converts a total amount of months to years and months. Application of flooring division and modulo operators.
 - 'movies_cost.py': IPO that calculates the cost of a trip to the movies. When user inputs the cost of tickets, the amount of tickets, and the cost of snack concessions, the program will print the total cost of the trip. Includes constant to change tax rate.
 - 'per_second_per_day': IPO that converts and displays the user's rate of per seconds into a rate of per day.
-- 'planet_weight_table': IPO that requests a weight from the user and displays a table of the converted weight on the planets in our solar system. 
+- 'planet_weight_table': IPO that requests a weight from the user and displays a table of the converted weight on the planets in our solar system. Utilizes constants to change precision of weight conversions on the different planets.
