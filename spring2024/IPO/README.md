@@ -6,7 +6,7 @@ The following are Input Processing Output programs, some using Python's math lib
 - 'lucky_number': basic IPO that prompts user for their name and lucky number and prints a statement with those values.
 - 'mad_lib': IPO that displays a mad-lib story after collecting words from the user.
 - 'magic_mile': IPO that calculates the amount of hours it will take to run a marathon. Requires user to input their mile pace in seconds. Will output the amount of hours.
-- 'months_to_years': IPO that converts a total amount of months to years and months. Application of div and mod.
+- 'months_to_years': IPO that converts a total amount of months to years and months. Application of flooring division and modulo operators.
 - 'movies_cost.py': IPO that calculates the cost of a trip to the movies. When user inputs the cost of tickets, the amount of tickets, and the cost of snack concessions, the program will print the total cost of the trip. Includes constant to change tax rate.
 - 'per_second_per_day': IPO that converts a rate of per seconds to per days.
 - 'planet_weight_table': IPO that requests a weight from the user and displays a table of the converted weight on the planets in our solar system. 
