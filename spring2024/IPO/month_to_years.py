@@ -4,8 +4,8 @@
 
     Tyler
     2/5/24
-    
 """
+
 
 # Define the constant.
 MONTHS_IN_YEAR: int = 12
