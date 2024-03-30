@@ -12,7 +12,7 @@ SECONDS_IN_HOUR: int = 3600
 
 mile_pace: float
 marathon_mile_pace: float
-Marathon_time_seconds: float
+marathon_time_seconds: float
 marathon_time_hours: float
 
 # Obtain the user's pace in seconds for running a mile. 
