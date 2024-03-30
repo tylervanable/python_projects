@@ -1,7 +1,7 @@
 # Input Processing Output Programs
 The following are Input Processing Output programs, some using Python's math library:
 - 'age_calculator': IPO that prompts user for the year they were born and prints how old they will be this year. A constant is included to easily change the current year.
-- 'calculate_hypotenuse': IPO that prompts the user for the value of "a" and "b" and returns the hypotenuse of the right triangle. Demonstrates use of math library. Use of Python's round function.
+- 'calculate_hypotenuse': IPO that prompts the user for the value of "a" and "b" and returns the hypotenuse of the right triangle. Demonstrates use of math library. Also uses Python's round function.
 - 'cd_interest_rate_conversion': IPO that calculates the user's CD interest rate.
 - 'lucky_number': basic IPO that prompts user for their name and lucky number and prints a statement with those values.
 - 'mad_lib': IPO that displays a mad-lib story after collecting words from the user.
