@@ -1,8 +1,10 @@
 """
 Convert per-second rate to a per-day rate and report calculations to user.
+
 Tyler
 2/5/24
 """
+
 
 # Define the constant.
 SECONDS_IN_DAY: int = 86400
