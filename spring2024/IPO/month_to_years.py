@@ -10,7 +10,7 @@
 # Define the constant.
 MONTHS_IN_YEAR: int = 12
 
-# Annotate the variable
+# Annotate the variable.
 total_months: int
 years: int
 remainder_months: int
