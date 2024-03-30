@@ -1,8 +1,11 @@
 """
-Calculuate the total cost of the movie trip.
-Tyler
-1/31/24
+  Calculuate the total cost of the movie trip.
+  
+  Tyler
+  1/31/24
 """
+
+
 # Define constant.
 SALES_TAX: float = 1.07
 
@@ -10,7 +13,7 @@ SALES_TAX: float = 1.07
 amount_of_tickets: int
 cost_of_tickets: float
 concession_bill: float
-bill_after_tax:float
+bill_after_tax: float
 
 # Obtain the number of tickets, cost of tickets and concession bill from the user. 
 amount_of_tickets = int(input("Please enter the number of tickets purchased: "))
