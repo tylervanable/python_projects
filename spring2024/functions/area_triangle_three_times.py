@@ -16,7 +16,7 @@
 def calculate_area(base: float, height: float) -> float:
     """Calculate the area of three values from the user."""
 
-    # Annotate the variables.
+    # Annotate the variable.
     area: float
 
     # Calculate the area of the triangle.
