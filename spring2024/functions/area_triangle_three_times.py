@@ -42,5 +42,5 @@ def main() -> None:
         area = calculate_area(base, height)
         print("The value of triangle number {} is {}".format(i, area))
     
-
+# Invoke the main function to obtain user inputs. 
 main()
