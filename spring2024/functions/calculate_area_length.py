@@ -4,10 +4,6 @@
 
     area of a rectangle = length x width
     perimeter of a rectangle = 2 x (length + width)
-
-    Notes:
-    formal parameter (looks like annotation inside argument function def)
-    actual parameter (a variable or variables argument inside the function call)
     
     Tyler
     Happy April Fool's Day!
