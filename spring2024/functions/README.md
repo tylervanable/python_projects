@@ -5,4 +5,4 @@ The following python programs utilize functions:
 - 'convert_pounds_kilogram': IPO program that asks the user for an amount of pounds and converts this value to kilograms. 
 - 'factorial': IPO program that asks user for a value 'n' and determines the factorial amount of 'n' [n!].
 - 'guessing_game': program that prompts the user to pick a number between 1 and 100. Uses an accumulator variable to count how many guesses the user makes before guessing correctly. 
-- 'rect_area_length'
+- 'rect_area_length': program that requests the length and width from the user and outputs the area. 
