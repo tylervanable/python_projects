@@ -3,7 +3,7 @@ The following is collection of Python projects from my introductory programming 
 
 Project scripts include turtle, IPO, branching, and looping. Scripts later include function implementation and lists. 
 
-Directories in this repository (will) include:
+Directories in this repository include:
 - '/turtle'
 - '/IPO'
 - '/branching'
