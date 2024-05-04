@@ -9,4 +9,3 @@ Directories in this repository include:
 - '/branching'
 - '/looping'
 - '/functions'
-- '/lists'
