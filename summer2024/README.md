@@ -1,1 +1,1 @@
-
+In the Summer of 2024, I will continue to study Python. I will be learning about lists, tuples, sets, and dictionaries. I also plan to learn more about exceptions, objects, and classes. If time permits, I want to practice other data structures. 
