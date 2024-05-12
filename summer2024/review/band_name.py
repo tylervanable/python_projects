@@ -17,10 +17,10 @@ pet_name: str
 print("Welcome to the band name generator!")
 
 # Obtain a city from the user.
-city = input("Please enter the name of the city you grew up in: ")
+city = input("Please enter the name of the city you grew up in:\n")
 
 # Obtain a name of a pet from the user.
-pet_name = input("Please enter a pet name: ")
+pet_name = input("Please enter a pet name:\n")
 
 # Concatenate the city and pet names and display the user's band name.
 print("Your band name is: " + city + " " + pet_name + ".")
