@@ -6,7 +6,7 @@
 """
 
 
-# Annotate the variables
+# Annotate the variables. 
 greeting: str
 first_char: str
 second_char: str
