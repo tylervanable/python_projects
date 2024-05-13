@@ -53,7 +53,7 @@ print("This is the data type of 'num_char' before casting:")
 print(type(num_char))
 print('Using: print(type(num_char))')
 
-# Reassigning num_char after casting as a string.
+# Reassign num_char after casting as a string.
 print("If we want the above code to work, we must cast 'num_char' into a string.")
 print("Because we did not originally cast num_char as a string, we MUST also reassign the casting into 'num_char'.")
 num_char = str(num_char)
