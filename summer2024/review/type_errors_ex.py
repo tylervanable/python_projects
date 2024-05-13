@@ -71,3 +71,20 @@ print()
 print("Our code finally works after casting to a string: ")
 print('print("Your name has " + num_char + " characters.")')
 print("Your name has " + num_char + " characters.")
+
+# Insert a line break here.
+print("\n")
+
+# Summarize data type concatenation.
+print("It is NOT possible to concatenate a string and an integer.")
+print("It is also NOT possible to concatenate a string and a float.")
+print("It IS possible to concatenate two strings, even if the strings contain numbers.")
+print("However, it IS possible to concatenate an integer and a float.")
+
+# Insert a line break here.
+print()
+
+# Confirming there will be no TypeError between integers and floats.
+print("If we try to add a float and an integer, we do NOT get a TypeError.")
+print('For example: print(float(10) + int(10))')
+print(float(10) + int(10))
