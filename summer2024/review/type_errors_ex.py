@@ -7,7 +7,7 @@
 """
 
 # Display statements about when the len function will result in a TypeError.
-print("When using the built-in len() function, note how only strings work.")
+print("When using the built-in len() function, note how we can only concatenate strings using the print() function.")
 print("The following code will result in a TypeError: ")
 print('print(len(123))')
 
