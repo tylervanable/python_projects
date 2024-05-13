@@ -61,8 +61,8 @@ print('Using: num_char = str(num_char)')
 
 # Display a message to the user about the type of num_char after casting.
 print("This is the data type of 'num_char' after casting:")
-print('print(type(num_char))')
 print(type(num_char))
+print('Using: print(type(num_char))')
 
 # Insert a line break here.
 print()
