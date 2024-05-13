@@ -89,3 +89,12 @@ print("If we try to add a float and an integer, we do NOT get a TypeError.")
 print('For example: print(float(10) + int(10))')
 print(float(10) + int(10))
 print("Note: the result of adding a float and an integer is a float.")
+
+# Insert a line break here.
+print()
+
+# Discuss concatenating boolean data types with strings, floats, and integers.
+print("If we try to concatenate a string with a bool, we get a TypeError.")
+print("If we try to concatenate an integer with a bool, we do NOT get a TypeError.")
+print("If we try to concatenate a float with a bool, we do NOT get a TypeError.")
+print("If we try to concatenate a bool with a bool, we do NOT get a TypeError.")
