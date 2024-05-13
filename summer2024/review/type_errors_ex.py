@@ -33,14 +33,14 @@ num_char = len(input("What is your name? "))
 print("Note: The number of characters as an integer is assigned to the variable 'num_char'.")
 
 # Insert a line break here.
-print()
+print("\n")
 
 # Display another message about when code will result in a TypeError.
 print("The below code will result in a TypeError:")
 print('print("Your name has " + num_char + " characters.")')
 
 # Insert a line break here.
-print("\n")
+print()
 
 # Display a message to the user about the type() function.
 print("We can check the data type of a value/variable using the built-in type() function.")
