@@ -30,7 +30,6 @@ print("Using the len() function, the number of characters in your name is conver
 print("The number of characters as an integer is assigned to the variable 'num_char'.")
 print('Using: num_char = len(input("What is your name? "))')
 num_char = len(input("What is your name? "))
-print("Note: The number of characters as an integer is assigned to the variable 'num_char'.")
 
 # Insert a line break here.
 print("\n")
