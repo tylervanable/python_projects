@@ -26,7 +26,7 @@ print("\n")
 # The following code attempts to obtain a name from the user, convert the
 # number of characters into an integer using the len() function, and
 # display a message to the user. It will result in a TypeError.
-print("Using the len function, the number of characters in your name is converted to an integer.")
+print("Using the len() function, the number of characters in your name is converted to an integer.")
 print("The number of characters as an integer is assigned to the variable 'num_char'.")
 print('Using: num_char = len(input("What is your name? "))')
 num_char = len(input("What is your name? "))
