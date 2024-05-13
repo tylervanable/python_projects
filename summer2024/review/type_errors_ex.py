@@ -76,7 +76,7 @@ print("Your name has " + num_char + " characters.")
 print("\n")
 
 # Summarize data type concatenation.
-print("It is NOT possible to concatenate a string and an integer.")
+print("In summary, it is NOT possible to concatenate a string and an integer.")
 print("It is also NOT possible to concatenate a string and a float.")
 print("It IS possible to concatenate two strings, even if the strings contain numbers.")
 print("However, it IS possible to concatenate an integer and a float.")
