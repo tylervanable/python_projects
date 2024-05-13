@@ -55,7 +55,7 @@ print('Using: print(type(num_char))')
 
 # Reassigning num_char after casting as a string.
 print("If we want the above code to work, we must cast 'num_char' into a string.")
-print("We MUST also reassign the casting into 'num_char' or assign as a new variable.")
+print("Because we did not originally cast num_char as a string, we MUST also reassign the casting into 'num_char'.")
 num_char = str(num_char)
 print('Using: num_char = str(num_char)')
 
