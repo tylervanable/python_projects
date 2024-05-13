@@ -9,16 +9,16 @@
 
 # Annotate the variables.
 two_digit_number: str = input("Please enter a two-digit number: ")
-first_digit: str
-second_digit: str
+first_digit: int
+second_digit: int
 sum: int
 
 # Obtain the first and second digits from the two digit number by indexing.
-first_digit = two_digit_number[0]
-second_digit = two_digit_number[1]
+first_digit = int(two_digit_number[0])
+second_digit = int(two_digit_number[1])
 
 # Sum together the first and second digits.
-sum = int(first_digit) + int(second_digit)
+sum = first_digit + second_digit
 
 # Display the sum.
 print(sum)
