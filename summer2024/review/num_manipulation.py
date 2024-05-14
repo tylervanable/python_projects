@@ -24,6 +24,7 @@ print("However, because we casted, any number(s) after the decimal point does no
 print("Result:")
 print(int(7/4))
 print("So instead of a result of 1.75 or 2 (rounded up), we get 1.")
+print("Note: we may also cast a decimal number (like 1.75) directly and obtain the same result.")
 
 # Insert space here.
 print("\n")
