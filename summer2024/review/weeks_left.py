@@ -6,15 +6,13 @@
     5/13/24
 """
 
-# Annotate the variables and define the constants.
-TOTAL_WEEKS: int = int(90*52)
-
+# Annotate the variables.
 age: int = int(input("How old are you? "))
-weeks_lived: int = int(age*52)
+years_left: int = 90-int(age)
 weeks_left: int 
 
 # Calculate the number of weeks left in the user's lifetime.
-weeks_left = int(TOTAL_WEEKS-weeks_lived)
+weeks_left = int(years_left*52)
 
 # Display the number of weeks left.
 print(f"You have {weeks_left} weeks left.")
