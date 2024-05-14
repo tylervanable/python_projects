@@ -9,7 +9,8 @@
 
 # Annotate the variables and obtain user inputs.
 bill_cost: float = float(input("What was the total bill? "))
-tip_percentage: float = float(input("How much tip would you like to give? 15, 20, 25? "))
+tip: int = int(input("How much tip would you like to give? 15, 20, 25? "))
+tip_percentage: float = float(tip/100 + 1)
 bill_after_tax: float = float(bill_cost*tip_percentage)
 num_people: int = int(input("How many people to split the bill? "))
 cost_per_person: float
