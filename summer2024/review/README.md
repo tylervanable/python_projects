@@ -11,4 +11,4 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'tip_calc': program that calculates the cost of a meal for each person; the user inputs the cost of the meal, what percentage tip they want to give, and between how many people the bill will be split (MY program that I wrote without any additional aid)
 - 'tip_calc2': same program as the prior the tip calculator, but adapted from the Udemy course program that Dr. Yu provided
 - 'type_errors_ex': program that discusses the TypeError
-- 'weeks_left': 
+- 'weeks_left': a program that asks the user for their age, and calculates how many weeks the user has to live given that they live for 90 years.
