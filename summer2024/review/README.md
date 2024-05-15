@@ -9,6 +9,6 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'num_manipulation': program that demonstrates how casting can impact data types in Python
 - 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster
 - 'tip_calc': program that calculates the cost of a meal for each person; the user inputs the cost of the meal, what percentage tip they want to give, and between how many people the bill will be split (MY program that I wrote without any additional aid)
-- 'tip_calc2': 
-- 'type_errors_ex'
-- 'weeks_left'
+- 'tip_calc2': same program as the prior the tip calculator, but adapted from the Udemy course program that Dr. Yu provided
+- 'type_errors_ex': program that discusses the TypeError
+- 'weeks_left': 
