@@ -1,7 +1,7 @@
 Scripts in this directory are adapted from Dr. Angela Yu's "100 Days of Code: The Complete Python Pro Bootcamp".
 
 The following scripts are review for Python syntax, variables, basic data types, IPO programs, branching (conditionals), loops, and functions:
-- 'add_digits_two_digit': program that requests a two digit number from the user and displays the sum of those individual digits; utilizes indexing of a variable
+- 'add_digits_two_digit': program that requests a two digit number from the user and displays the sum of those individual digits; utilizes indexing of a variable of the integer data type.
 - 'band_name': program that asks the user for a city and a name of a pet; it then displays a sample band name to the user
 - 'bmi_calc_udemy': BMI calculator that requests that user's height in meters and weight in kilograms then displays their BMI
 - 'data_type_ex': program that demonstrates indexing a variable of the string data type; also demonstrates the use of underscores in place of commas for large numbers
