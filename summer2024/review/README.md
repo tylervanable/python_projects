@@ -19,6 +19,4 @@ The following scripts are review for Python syntax, variables, basic data types,
     - len() function results in an integer
     - print(len(123)) results in a TypeError
     - Trying to print and concatenate strings and an integer results in a TypeError; must cast int as string
-    - 
-    - 
 - 'weeks_left': a program that asks the user for their age, and calculates how many weeks the user has to live given that they live for 90 years.
