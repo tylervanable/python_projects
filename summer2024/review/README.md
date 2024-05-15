@@ -4,7 +4,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'add_digits_two_digit': program that requests a two digit number from the user and displays the sum of those individual digits; utilizes indexing of a variable
 - 'band_name': program that asks the user for a city and a name of a pet; it then displays a sample band name to the user
 - 'bmi_calc_udemy': BMI calculator that requests that user's height in meters and weight in kilograms then displays their BMI
-- 'data_type_ex': program that discusses data types such as integers, floats, strings, and bools; demonstrates how Python deals with data types
+- 'data_type_ex': program that demonstrates indexing a variable of the string data type; also demonstrates the use of underscores in place of commas for large numbers
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
 - 'num_manipulation': program that demonstrates how casting can impact data types in Python
 - 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster
