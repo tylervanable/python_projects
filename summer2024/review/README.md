@@ -6,9 +6,9 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'bmi_calc_udemy': BMI calculator that requests that user's height and weight and displays their BMI
 - 'data_type_ex': program that discusses data types such as integers, floats, strings, and bools; demonstrates how Python deals with data types
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
-- 'num_manipulation'
-- 'rollercoaster_height'
-- 'tip_calc'
+- 'num_manipulation': program that demonstrates how casting can impact data types in Python
+- 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster
+- 'tip_calc': program that calculates the cost of a meal 
 - 'tip_calc2'
 - 'type_errors_ex'
 - 'weeks_left'
