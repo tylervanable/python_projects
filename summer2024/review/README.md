@@ -6,7 +6,13 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'bmi_calc_udemy': BMI calculator that requests that user's height in meters and weight in kilograms then displays their BMI
 - 'data_type_ex': program that demonstrates indexing a variable of the string data type; also demonstrates the use of underscores in place of commas for large numbers (eg 1_000_000 is one million)
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
-- 'num_manipulation': program that demonstrates how casting can impact data types in Python
+- 'num_manipulation': program that demonstrates how casting can impact data types such as integers, floats, strings, and bools in Python
+    - Floating point division
+    - Integer casting division
+    - Fooring division (similar in effect to integer casting division)
+    - round() function
+    - Augmented operators (+=, -=, *=, /=, **=, //=, %/) and their continuous impact on a variable
+  
 - 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster
 - 'tip_calc': program that calculates the cost of a meal for each person; the user inputs the cost of the meal, what percentage tip they want to give, and between how many people the bill will be split (MY program that I wrote without any additional aid)
 - 'tip_calc2': same program as the prior the tip calculator, but adapted from the Udemy course program that Dr. Yu provided
