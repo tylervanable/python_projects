@@ -80,7 +80,6 @@ print("In summary, it is NOT possible to concatenate a string and an integer.")
 print("It is also NOT possible to concatenate a string and a float.")
 print("It IS possible to concatenate two strings, even if the strings contain numbers.")
 print("However, it IS possible to add an integer and a float.")
-print("Note: adding an int and float results in the float data type.")
 
 # Insert a line break here.
 print()
