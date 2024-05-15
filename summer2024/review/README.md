@@ -12,9 +12,8 @@ The following scripts are review for Python syntax, variables, basic data types,
     - Fooring division (similar in effect to integer casting division)
     - round() function
     - Augmented operators (+=, -=, *=, /=, **=, //=, %/) and their continuous impact on a variable
-  
 - 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster
 - 'tip_calc': program that calculates the cost of a meal for each person; the user inputs the cost of the meal, what percentage tip they want to give, and between how many people the bill will be split (MY program that I wrote without any additional aid)
-- 'tip_calc2': same program as the prior the tip calculator, but adapted from the Udemy course program that Dr. Yu provided
+- 'tip_calc2': same program as the prior the tip calculator, but includes slight adaptatons from Dr. Yu's Udemy program example; adaptations include an additional variable for readability and use of a format specifier and .format() instead of the round() function
 - 'type_errors_ex': program that discusses the TypeError
 - 'weeks_left': a program that asks the user for their age, and calculates how many weeks the user has to live given that they live for 90 years.
