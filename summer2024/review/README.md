@@ -8,7 +8,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
 - 'num_manipulation': program that demonstrates how casting can impact data types in Python
 - 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster
-- 'tip_calc': program that calculates the cost of a meal 
-- 'tip_calc2'
+- 'tip_calc': program that calculates the cost of a meal for each person; the user inputs the cost of the meal, what percentage tip they want to give, and between how many people the bill will be split (MY program that I wrote without any additional aid)
+- 'tip_calc2': 
 - 'type_errors_ex'
 - 'weeks_left'
