@@ -4,7 +4,7 @@ The following python programs utilize functions:
 - 'area_triangle_three_times': IPO program that asks the user for the base and height three times using a 'for-loop'. The program displays the area of these triangles to the user.
 - 'calc_calories_from_fat': IPO program that asks the user for how many fat grams they consumed today and calculates and displays the number of calories the user gained
 - 'calc_shapes_area': IPO program in which the user can choose between a square, rectangle, triangle or circle; the program will calculate the area of the user's shape and display the area.
-- 'car_expenses':
+- 'car_expenses': IPO program that requests the user input the monthly costs associated with operating their automobile, including loan payment, insurance, gasoline, oil, tires, and maintenance; the user will calculate and display the monthly and yearly costs of operating their automobile
 - 'check_letter': program that invokes a function called 'is_letter' that validates whether 12 test characters are of one character length and if the character is a letter; displays validation 6 True and 6 False characters, True meaning a letter and False meaning a non-letter
 - 'convert_pounds_kilogram': IPO program that asks the user for an amount of pounds and converts this value to kilograms. 
 - 'factorial': IPO program that asks user for a value 'n' and determines the factorial amount of 'n' [n!].
