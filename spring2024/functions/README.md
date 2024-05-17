@@ -13,4 +13,4 @@ The following python programs utilize functions:
 - 'read_and_print_function'
 - 'rect_area_length': program that requests the length and width from the user and outputs the area. 
 - 'validate_sodoku_string': program that invokes a function called 'is_valid' that checks whether 12 test strings contain 9 characters, with exactly one '1', '2', '3', '4', '5', '6', '7', '8', and '9'; displays validation of 6 True and 6 False strings, True meaning the string is a valid sodoku string combination, False meaning the string is not a valid sodoku string combination
-- 'validate_yes_or_no':
+- 'validate_yes_or_no': program that invokes a function called 'is_valid' that checks whether 12 test strings that the user enters is either 'yes' or 'no', ignoring case; displays validation of 6 True and 6 False strings, True meaning the string is either 'yes' or 'no' ignoring case, False meaning the string is not 'yes' or 'no' ignoring case
