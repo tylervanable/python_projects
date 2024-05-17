@@ -3,7 +3,7 @@ The following python programs utilize functions:
 
 - 'area_triangle_three_times': IPO program that asks the user for the base and height three times using a 'for-loop'. The program displays the area of these triangles to the user.
 - 'calc_calories_from_fat': IPO program that asks the user for how many fat grams they consumed today and calculates and displays the number of calories the user gained
-- 'calc_shapes_area':
+- 'calc_shapes_area': IPO program in which the user can choose between a square, rectangle, triangle or circle; the program will calculate the area of the user's shape and display the area.
 - 'car_expenses':
 - 'check_letter':
 - 'convert_pounds_kilogram': IPO program that asks the user for an amount of pounds and converts this value to kilograms. 
