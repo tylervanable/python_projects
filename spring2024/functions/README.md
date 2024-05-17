@@ -10,7 +10,7 @@ The following python programs utilize functions:
 - 'factorial': IPO program that asks user for a value 'n' and determines the factorial amount of 'n' [n!].
 - 'falling_distance': IPO program that obtains the falling time from the user, calculates the falling distance of the user's object, and displays the distance fallen
 - 'guessing_game': program that prompts the user to pick a number between 1 and 100. Uses an accumulator variable to count how many guesses the user makes before guessing correctly. 
-- 'read_and_print_function'
+- 'read_and_print_function': program that takes a file name as a parameter, opens the file, and reads and returns the first line; if the file does not exist, 'None' is returned. Program also counts the number of lines in the text file
 - 'rect_area_length': program that requests the length and width from the user and outputs the area. 
 - 'validate_sodoku_string': program that invokes a function called 'is_valid' that checks whether 12 test strings contain 9 characters, with exactly one '1', '2', '3', '4', '5', '6', '7', '8', and '9'; displays validation of 6 True and 6 False strings, True meaning the string is a valid sodoku string combination, False meaning the string is not a valid sodoku string combination
 - 'validate_yes_or_no': program that invokes a function called 'is_valid' that checks whether 12 test strings that the user enters is either 'yes' or 'no', ignoring case; displays validation of 6 True and 6 False strings, True meaning the string is either 'yes' or 'no' ignoring case, False meaning the string is not 'yes' or 'no' ignoring case
