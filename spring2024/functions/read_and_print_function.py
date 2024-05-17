@@ -1,17 +1,4 @@
 """
-    Write a function that takes a file name as a parameter,
-    opens the file, reads and counts all of the lines, and
-    returns the number of lines in the file.  Write a main
-    function that invokes this function and prints the number
-    of lines in the file.
-
-    Tyler
-    4/17/24
-
-"""
-
-
-"""
     Write a function that takes a file name as a parameter, opens the file,
     and reads and returns the first line. If the file doesn't exist, return None.
     Write a main function to invoke this function with a file name and
