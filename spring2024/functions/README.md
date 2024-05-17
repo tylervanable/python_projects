@@ -8,7 +8,7 @@ The following python programs utilize functions:
 - 'check_letter': program that invokes a function called 'is_letter' that validates whether 12 test characters are of one character length and if the character is a letter; is_letter displays 6 True and 6 False characters, True meaning a letter and False meaning a non-letter
 - 'convert_pounds_kilogram': IPO program that asks the user for an amount of pounds and converts this value to kilograms. 
 - 'factorial': IPO program that asks user for a value 'n' and determines the factorial amount of 'n' [n!].
-- 'falling_distance':
+- 'falling_distance': IPO program that obtains the falling time from the user, calculates the falling distance of the user's object, and displays the distance fallen
 - 'guessing_game': program that prompts the user to pick a number between 1 and 100. Uses an accumulator variable to count how many guesses the user makes before guessing correctly. 
 - 'read_and_print_function'
 - 'rect_area_length': program that requests the length and width from the user and outputs the area. 
