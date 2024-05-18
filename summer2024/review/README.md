@@ -4,7 +4,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'add_digits_two_digit': program that requests a two digit number from the user and displays the sum of those individual digits; utilizes indexing of a variable of the integer data type.
 - 'band_name': program that asks the user for a city and a name of a pet; it then displays a sample band name to the user
 - 'bmi_calc': BMI calculator that requests that user's height in meters and weight in kilograms then displays their BMI
-- 'bmi_calc2': similar to the prior program, but instead of simply displaying the user's BMI, the program will also display the clinical interpretation of the user's BMI
+- 'bmi_calc2': similar to the prior program, but instead of simply displaying the user's BMI, the program will also display the clinical interpretation of the user's BMI based on the calculation
 - 'data_type_ex': program that demonstrates indexing a variable of the string data type; also demonstrates the use of underscores in place of commas for large numbers (eg 1_000_000 is one million)
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
 - 'num_manipulation': program that demonstrates how casting can impact data types such as integers, floats, strings, and bools in Python:
