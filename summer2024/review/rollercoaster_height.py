@@ -22,6 +22,12 @@ else:
 # Insert a line break.
 print("\n")
 
+# Discuss common Python mistake between '=' and '=='.
+print("In Python, '=' and '==' look similar and are commonly mistaken, but have completely different uses.")
+print("Using '=' denotes assignment. Whatever is to the right of the '=' sign is stored to the variable on the left.")
+print("Using '==' denotes an equality check. An example might include: 'if yes == yes:' or 'if height == 120'")
+
+
 # Discuss comparison operators.
 print("Comparison operators include the following: ")
 print("Greater than: '>'")
