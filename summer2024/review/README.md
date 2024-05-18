@@ -13,6 +13,7 @@ The following scripts are review for Python syntax, variables, basic data types,
     - Fooring division (similar in effect to integer casting division)
     - round() function
     - Augmented operators (+=, -=, *=, /=, **=, //=, %/) and their continuous impact on a variable
+- 'leap_year': determines if a user-given year is a leap year and displays whether that year is or is not a leap year
 - 'odd_or_even': calculates the remainder of the user's number when dividing by 2; displays whether the number is odd or even
 - 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster; discusses assignment operators
 - 'rollercoaster_height_nested': similar program to the one prior, except it utilizes a nested loop with an elif statement to differentiate how much the user should pay to ride the rollercoaster depending on their age; if the user is younger than 12 years old, they should pay $5, if older than 12 but younger than 18, they should pay $7, and if the user is 18 or older, they should pay $12
