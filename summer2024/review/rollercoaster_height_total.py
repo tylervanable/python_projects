@@ -32,6 +32,7 @@ if height >= 120:
     else:
         bill = 12
         print("Adult tickets are $12.")
+
 # Ask the user if they want a picture taken and if they do
 # total the total cost of the ticket and photo. 
     wants_ticket = input("Do you want a photo taken? Yes or no: ")
@@ -44,4 +45,13 @@ if height >= 120:
 # Display a message to the user if they cannot ride the rollercoaster.
 else:
     print("Sorry, you have to grow taller before you can ride.")
+
+# Insert a line break.
+print("\n")
+
+# Discuss common Python mistake between '=' and '=='.
+print("In Python, '=' and '==' look similar and are commonly mistaken, but have completely different uses.")
+print("Using '=' denotes assignment. Whatever is to the right of the '=' sign is stored to the variable on the left.")
+print("Using '==' denotes an equality check. Checks whether the values on the left and right sides are equal. If so, True is returned.")
+print("An example of an equality check might include: 'if yes == yes:' or 'if height == 120'")
 
