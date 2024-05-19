@@ -16,11 +16,11 @@ The following scripts are review for Python syntax, variables, basic data types,
     - round() function
     - Augmented operators (+=, -=, *=, /=, **=, //=, %/) and their continuous impact on a variable
 - 'odd_or_even': calculates the remainder of the user's number when dividing by 2; displays whether the number is odd or even
-- 'pizza_cost':
+- 'pizza_cost': calculates the cost of a pizza order depending on the size of the pizza and the toppings on that pizza
 - 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster; discusses assignment operators
 - 'rollercoaster_height_nested': similar program to the one prior, except it utilizes a nested loop with an elif statement to differentiate how much the user should pay to ride the rollercoaster depending on their age; if the user is younger than 12 years old, they should pay $5, if older than 12 but younger than 18, they should pay $7, and if the user is 18 or older, they should pay $12
 - 'rollercoaster_height_total': similar program to the one prior, except it asks the user if they would like a picture taken and if yes, three dollars is added to the cost of the bill; discusses the difference between assignment and an equality check ('=' vs. '=='); utilizes an equality check and .lower()
-- 'rollercoaster_midlife': similar program to the one prior, except it allows users having a midlife crisis (between the ages of 45 and 55) to have a free ticket; discusses the use of 
+- 'rollercoaster_midlife': similar program to the one prior, except it allows users having a midlife crisis (between the ages of 45 and 55) to have a free ticket; discusses the use of logical operators, such as 'and', 'or', and 'not'
 - 'tip_calc': program that calculates the cost of a meal for each person; the user inputs the cost of the meal, what percentage tip they want to give, and between how many people the bill will be split (MY program that I wrote without any additional aid)
 - 'tip_calc2': same program as the prior the tip calculator, but includes slight adaptatons from Dr. Yu's Udemy program example; adaptations include an additional variable for readability and use of a format specifier and .format() instead of the round() function
 - 'type_errors_ex': program that discusses the TypeError and string concatenation:
