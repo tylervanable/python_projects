@@ -22,7 +22,6 @@ else:
 # Insert a line break here.
 print("\n")
 
-
 # Discuss comparison operators.
 print("Comparison operators include the following: ")
 print("Greater than: '>'")
