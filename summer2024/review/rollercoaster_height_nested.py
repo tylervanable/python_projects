@@ -27,17 +27,3 @@ if height >= 120:
         print("Please pay $12.")
 else:
     print("Sorry, you have to grow taller before you can ride.")
-
-# Insert a line break.
-print("\n")
-
-# Discuss comparison operators.
-print("Comparison operators include the following: ")
-print("Greater than: '>'")
-print("Less than: '<'")
-print("Greater than or equal to: '>='")
-print("Less than or equal to: '<='")
-print("Equal to: '=='")
-print("Not equal to: '!='")
-print("Note: Make sure to distinguish between '=' and '=='.")
-print("... '=' will assign a value while '==' checks if two values are True or False")
