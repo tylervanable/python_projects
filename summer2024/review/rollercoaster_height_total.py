@@ -53,5 +53,5 @@ print("\n")
 print("In Python, '=' and '==' look similar and are commonly mistaken, but have completely different uses.")
 print("Using '=' denotes assignment. Whatever is to the right of the '=' sign is stored to the variable on the left.")
 print("Using '==' denotes an equality check. Checks whether the values on the left and right sides are equal. If so, True is returned.")
-print("An example of an equality check might include: 'if yes == yes:' or 'if height == 120'")
+print("An example of an equality check might include: 'if wants_ticket == "yes:"' or 'if height == 120'")
 
