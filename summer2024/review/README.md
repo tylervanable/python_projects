@@ -8,7 +8,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'data_type_ex': program that demonstrates indexing a variable of the string data type; also demonstrates the use of underscores in place of commas for large numbers (eg 1_000_000 is one million)
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
 - 'leap_year': determines if a user-given year is a leap year and displays whether that year is or is not a leap year
-- 'love_calc': 
+- 'love_calc': a game program that calculates the "love score" between two user-given names; to find the love score, the program totals the number of times the two names contain the characters in the words "true" and "love"; then the program concatenates the two values 
 - 'num_manipulation': program that demonstrates how casting can impact data types such as integers, floats, strings, and bools in Python:
     - Floating point division
     - Integer casting division
