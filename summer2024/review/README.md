@@ -1,6 +1,6 @@
 Scripts in this directory are adapted from Dr. Angela Yu's "100 Days of Code: The Complete Python Pro Bootcamp".
 
-The 'custom_module_ex' directory demonstrates how to import custom Python modules into a script. As an example, 'pi_module' with an approximation of pi is imported into a file called 'custom_module' which prints a variable from the custom module.
+The 'custom_module_ex' directory demonstrates how to import custom Python modules into a script. As an example, 'pi_module' with an approximation of pi is imported into a file called 'import_custom' which prints a variable from the custom module.
 
 The following scripts are review for Python syntax, variables, basic data types, IPO programs, branching (conditionals), loops, and functions:
 - 'add_digits_two_digit': program that requests a two digit number from the user and displays the sum of those individual digits; utilizes indexing of a variable of the integer data type.
