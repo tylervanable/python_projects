@@ -1,6 +1,6 @@
 """
     Demonstrate how to import a custom Python library.
-    This file is imported by 'random_module.py'.
+    This file is imported by 'custom_module.py'.
 
     Called 'pi.py'.
 
