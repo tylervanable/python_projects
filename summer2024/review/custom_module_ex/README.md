@@ -5,13 +5,13 @@ This directory includes two files:
 The 'custom_module' file imports 'pi_module' to demonstrate how user's can import files amongst other files.
 
 To import a file, the following syntax is required:
-import <insert the file name here>
+import name_of_file
 Ex. import pi_module
 
 To use a custom variable from an imported file, the following syntax is required:
-<insert the file name here>.<name of variable>
+name_of_file.name_of_variable
 Ex. pi_module.pi
 
 To use a custom function from an imported file, the following syntax is required:
-<insert the file name here>.<name of function>()
+name_of_file.name_of_function()
 Ex. pi_module.do_something()
