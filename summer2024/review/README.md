@@ -1,5 +1,7 @@
 Scripts in this directory are adapted from Dr. Angela Yu's "100 Days of Code: The Complete Python Pro Bootcamp".
 
+The 'custom_module_ex' directory demonstrates how to import custom Python modules into a script. As an example, 'pi_module' with an approximation of pi is imported into a file called 'custom_module' which prints a variable from the custom module.
+
 The following scripts are review for Python syntax, variables, basic data types, IPO programs, branching (conditionals), loops, and functions:
 - 'add_digits_two_digit': program that requests a two digit number from the user and displays the sum of those individual digits; utilizes indexing of a variable of the integer data type.
 - 'band_name': program that asks the user for a city and a name of a pet; it then displays a sample band name to the user
@@ -17,6 +19,7 @@ The following scripts are review for Python syntax, variables, basic data types,
     - Augmented operators (+=, -=, *=, /=, **=, //=, %/) and their continuous impact on a variable
 - 'odd_or_even': calculates the remainder of the user's number when dividing by 2; displays whether the number is odd or even
 - 'pizza_cost': calculates the cost of a pizza order depending on the size of the pizza and the toppings on that pizza
+- 'random_module': demonstrates how to obtain a random integer value between 0 and 10 inclusive and how to obtain a random floating point number between 0 inclusive and 1 exclusive; demonstrates the logic behind generating a random floating point number between 0 inclusive and 5 exclusive by multiplying the previously randomly generated floating point number by 5
 - 'rollercoaster_height': branching program that requests the user's height in centimeters and prints a message depending on if the user is able to ride a rollercoaster; discusses assignment operators
 - 'rollercoaster_height_nested': similar program to the one prior, except it utilizes a nested loop with an elif statement to differentiate how much the user should pay to ride the rollercoaster depending on their age; if the user is younger than 12 years old, they should pay $5, if older than 12 but younger than 18, they should pay $7, and if the user is 18 or older, they should pay $12
 - 'rollercoaster_height_total': similar program to the one prior, except it asks the user if they would like a picture taken and if yes, three dollars is added to the cost of the bill; discusses the difference between assignment and an equality check ('=' vs. '=='); utilizes an equality check and .lower()
