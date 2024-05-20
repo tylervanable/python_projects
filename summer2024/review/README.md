@@ -30,4 +30,4 @@ The following scripts are review for Python syntax, variables, basic data types,
     - type() function displays the data type of what is between the parantheses
     - Bools have two "states", 'True' as '1' or 'False' as '0'; we can add bools with ints, floats, and other bools
 - 'weeks_left': a program that asks the user for their age, and calculates how many weeks the user has to live given that they live for 90 years.
-- 'your_own_adventure': a game program that a text choose-your-adventure story; utilizes multiple IPO patterns and equality checks to guide the user through exploring a wizard's island watchtower 
+- 'your_own_adventure': a game program that is a text, choose-your-adventure story; utilizes multiple IPO patterns and equality checks to guide the user through exploring a wizard's island watchtower 
