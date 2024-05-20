@@ -1,3 +1,5 @@
+Note: use the math module if you are looking to calculate using pi. This is only an example of how to import custom programs
+
 This directory includes two files:
 - 'custom_module': displays the digits of pi from the pi_module
 - 'pi_module': defines digits of pi
