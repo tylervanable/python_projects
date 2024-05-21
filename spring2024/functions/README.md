@@ -2,6 +2,8 @@
 The following python programs utilize functions:
 
 - 'area_triangle_three_times': IPO program that asks the user for the base and height three times using a 'for-loop'. The program displays the area of these triangles to the user.
+- 'bacon_proximity': IPO program that obtains the user's birth month and birth day as numbers, invokes the 'bacon_proximity' function, then calculates the absolute difference from Bacon's birthdate (July (7) 8)
+   - For example, if the user was born on 12/2, the function would add together |7-12| and |8-2|, returning 11 (5+6).
 - 'calc_calories_from_fat': IPO program that asks the user for how many fat grams they consumed today and calculates and displays the number of calories the user gained
 - 'calc_shapes_area': IPO program in which the user can choose between a square, rectangle, triangle or circle; the program will calculate the area of the user's shape and display the area.
 - 'car_expenses': IPO program that requests the user input the monthly costs associated with operating their automobile, including loan payment, insurance, gasoline, oil, tires, and maintenance; the user will calculate and display the monthly and yearly costs of operating their automobile
