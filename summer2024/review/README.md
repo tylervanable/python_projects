@@ -8,6 +8,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'bmi_calc': BMI calculator that requests that user's height in meters and weight in kilograms then displays their BMI
 - 'bmi_calc2': similar to the prior program, but instead of simply displaying the user's BMI, the program will also display the clinical interpretation of the user's BMI based on the calculation
 - 'data_type_ex': program that demonstrates indexing a variable of the string data type; also demonstrates the use of underscores in place of commas for large numbers (eg 1_000_000 is one million)
+- 'heads_or_tails': program that demonstrates the use of the random library to generate either a 0 or 1; if the whole number generated is 0, "Tails" is displayed to the user, and if 1, "Heads" is displayed
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
 - 'leap_year': determines if a user-given year is a leap year and displays whether that year is or is not a leap year
 - 'love_calc': a game program that calculates the "love score" between two user-given names; to find the love score, the program totals the number of times the two names contain the characters in the words "true" and "love"; then the program concatenates the two values; utilizes .lower() and .count()
