@@ -9,7 +9,7 @@
     Tyler
     5/20/24
 """
-# List of states in order by their admission into the Union.
+# Create a list of states in order by their admission into the Union.
 admission_of_states = ['Delaware', 'Pennsylvania', 'New Jersey', 'Georgia', 'Connecticut',
 'Massachusetts', 'Maryland', 'South Carolina', 'New Hampshire', 'Virginia', 'New York',
 'North Carolina', 'Rhode Island', 'Vermont', 'Kentucky', 'Tennessee', 'Ohio', 'Louisiana',
@@ -33,7 +33,7 @@ print(admission_of_states)
 # Insert a line break.
 print()
 
-# Use ".extend" to add three fictitious states to the list of states in the US.
+# Use the ".extend" method to add three fictitious states to the list of states in the US.
 print("Let's invite three D&D places into the United States!")
 admission_of_states.extend(["Waterdeep", "Neverwinter", "Dragonlance"])
 print(admission_of_states)
