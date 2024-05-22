@@ -13,28 +13,7 @@ fence_choice: str
 room_choice: str
 
 # Display an ASCII art watchtower to the user.
-print('''
-                    o___.-' /
-                    |      _\_
-                    |___.-'   `
-                    |
-                    |
-            _   _   j   _   _
-           [_]_[_]_[_]_[_]_[_]
-           [__j__j__j__j__j__]
-             [_j__j__j__j__]
-             [__j__j__j__j_]
-             [_j__j/V\_j__j]
-             [__j_// \\__j_]
-             [_j__|   |_j__]
-             [__j_|___|__j_]
-             [_j__j__j__j__]
-             [__j__j__j__j_]
-  _   _   _  [_j__j__j__j__]  _   _   _   _
-_[_]_[_]_[_]_[__j__j__j__j_]_[_]_[_]_[_]_[_]_
-  _j__j__j__j[_j__j__j__j__]j__j__j__j__j_
-     j  j  j [  j  j  j  j ] j  j  j  j    \|
-     ''')
+print(ascii_art.watchtower)
 
 # Display a welcome message to the user.
 print("You and your band of travelers see an island in the distance and approach a")
