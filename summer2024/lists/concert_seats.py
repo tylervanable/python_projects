@@ -1,5 +1,5 @@
 """
-    Reserve a concert seat for the user.
+    Reserve a concert seat for the user. Then display their seat choice to the user.
 
     Tyler
     5/22/24
@@ -7,7 +7,14 @@
 
 
 # Annotate the variables.
-concert_seat: str
+row1: str
+row2: str
+row3: str
+row4: str
+row5: str
+row6: str
+seats: list[str]
+seats: str
 row_letters: list[str]
 row_index: int
 column_index: int
