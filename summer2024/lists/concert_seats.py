@@ -13,11 +13,11 @@ row3: str
 row4: str
 row5: str
 row6: str
-seats: list[str]
-seats: str
-row_letters: list[str]
-row_index: int
+seats: list[list[str]]
+position: str
+letters: list[str]
 column_index: int
+row_index: int
 
 # List six rows of concert seats.
 row1 = ["⬜️","️⬜️","️⬜️", "⬜️️","⬜️️","⬜️️"]
