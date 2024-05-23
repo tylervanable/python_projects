@@ -1,3 +1,15 @@
+"""
+  Bury treasure in a 3x3 grid. Create a list of three rows of the map and column letters for indexing.
+  Nest the rows into a single list. Then index the column using the column letters list.
+  Display the buried treasure with an 'X'.
+
+  Tyler
+  5/22/24
+"""
+
+
+
+
 # List three rows of the map.
 line1 = ["⬜️","️⬜️","️⬜️"]
 line2 = ["⬜️","⬜️","️⬜️"]
