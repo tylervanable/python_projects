@@ -8,7 +8,15 @@
 """
 
 
-
+# Annotate the variables.
+line1: list[str]
+line2: list[str]
+line3: list[str]
+map: list[list[str]]
+position: str
+letters: list[str]
+column_index: int
+row_index: int
 
 # List three rows of the map.
 line1 = ["⬜️","️⬜️","️⬜️"]
