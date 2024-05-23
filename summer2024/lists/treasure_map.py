@@ -45,6 +45,5 @@ row_index = int(position[1]) - 1
 # Insert an 'X' in the appropriate column letter 
 map[row_index][column_index] = "X"
 
-# Write your code above this row 👆
-# 🚨 Don't change the code below 👇
+# Display the map with the buried treasure indicated by an 'X'.
 print(f"{line1}\n{line2}\n{line3}")
