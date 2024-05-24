@@ -1,1 +1,3 @@
-Here is a collection of projects that require the use of tuples:
+# Tuple programs:
+The following Python programs utilize tuples:
+- (WIP)
