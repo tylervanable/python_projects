@@ -38,5 +38,13 @@ print("Appending the Switch into the list...")
 nintendo_consoles.append("Switch")
 print(nintendo_consoles)
 
+# Insert a line break.
+print()
+
+# Insert the Wii U back into the list.
+print("Inserting the Wii U into the list...")
+nintendo_consoles.insert(5, "Wii U")
+print(nintendo_consoles)
+
 
 
