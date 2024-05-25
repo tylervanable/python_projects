@@ -1,9 +1,14 @@
 """
+    Make a copy of a list of Nintendo consoles in chronological order by
+    release date.
     Remove the Wii U from the list of Nintendo consoles.
     Append the Nintendo Switch console into the list.
     Also re-insert the Wii U console to the list.
+    Display the copy of the original list for comparison.
     Then sort the Nintendo consoles by alphabetical order.
-    Finally make a copy of original list.
+    Utilize the pop() method to to remove the Wii U again.
+    Finally reverse the order of the list.
+    Throughout, display the changes in the list to the user.
 
     Tyler
     5/24/24
@@ -73,5 +78,10 @@ print("Removing the Wii U console using the pop() method...")
 nintendo_consoles.pop(6)
 print(nintendo_consoles)
 
+# Insert a line break.
+print()
 
-
+# Reverse the order of the alphabetically sorted list.
+print("Reversing the order of the alphabetically sorted list...")
+nintendo_consoles.reverse()
+print(nintendo_consoles)
