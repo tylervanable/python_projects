@@ -23,6 +23,9 @@ print(nintendo_consoles)
 # Insert a line break.
 print()
 
+# Make a copy of the original list before revisions.
+copy_nintendo_consoles = nintendo_consoles.copy()
+
 # Remove the Wii U from the list of Nintendo consoles.
 # Display the list of Nintendo consoles.
 print("Here is a list of Nintendo consoles, with the removal of the")
@@ -56,6 +59,10 @@ print()
 print("Sorting the list of Nintendo consoles by alphabetical order...")
 nintendo_consoles.sort()
 print(nintendo_consoles)
+
+# Display the original copy for comparison.
+print("Displaying the original copy of Nintendo consoles before revisions...")
+print(copy_nintendo_consoles)
 
 
 
