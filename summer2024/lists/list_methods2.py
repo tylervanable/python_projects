@@ -34,6 +34,7 @@ print(nintendo_consoles)
 print()
 
 # Append the Nintendo Switch into the list.
+# Display the revised list.
 print("Appending the Switch into the list...")
 nintendo_consoles.append("Switch")
 print(nintendo_consoles)
@@ -42,8 +43,18 @@ print(nintendo_consoles)
 print()
 
 # Insert the Wii U back into the list.
+# Display the revised list again.
 print("Inserting the Wii U into the list...")
 nintendo_consoles.insert(5, "Wii U")
+print(nintendo_consoles)
+
+# Insert a line break.
+print()
+
+# Sort the Nintendo consoles by alphabetical order.
+# Display the alphabetized list.
+print("Sorting the list of Nintendo consoles by alphabetical order...")
+nintendo_consoles.sort()
 print(nintendo_consoles)
 
 
