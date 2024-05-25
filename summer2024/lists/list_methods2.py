@@ -64,5 +64,14 @@ print(nintendo_consoles)
 print("Displaying the original copy of Nintendo consoles before revisions...")
 print(copy_nintendo_consoles)
 
+# Insert a line break.
+print()
+
+# Utilize the pop() method to remove Nintendo's least successful console
+# in the alphabetically sorted list.
+print("Removing the Wii U console using the pop() method...")
+nintendo_consoles.pop(6)
+print(nintendo_consoles)
+
 
 
