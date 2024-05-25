@@ -1,6 +1,7 @@
 """
     Remove the Wii U from the list of Nintendo consoles.
-    Also insert the Switch console to the list.
+    Append the Nintendo Switch console into the list.
+    Also re-insert the Wii U console to the list.
     Then sort the Nintendo consoles by alphabetical order.
     Finally make a copy of original list.
 
@@ -28,3 +29,14 @@ print("Here is a list of Nintendo consoles, with the removal of the")
 print("least profitable Nintendo console.")
 nintendo_consoles.remove("Wii U")
 print(nintendo_consoles)
+
+# Insert a line break.
+print()
+
+# Append the Nintendo Switch into the list.
+print("Appending the Switch into the list...")
+nintendo_consoles.append("Switch")
+print(nintendo_consoles)
+
+
+
