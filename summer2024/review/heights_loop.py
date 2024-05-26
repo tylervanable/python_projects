@@ -1,4 +1,9 @@
+"""
+    Calculate and display the total height, number of students, and average height of a list of heights from the user.
 
+    Tyler
+    5/25/24
+"""
 
 # Annotate the variables.
 total_height: int = 0
