@@ -10,6 +10,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'bmi_calc2': similar to the prior program, but instead of simply displaying the user's BMI, the program will also display the clinical interpretation of the user's BMI based on the calculation
 - 'data_type_ex': program that demonstrates indexing a variable of the string data type; also demonstrates the use of underscores in place of commas for large numbers (eg 1_000_000 is one million)
 - 'heads_or_tails': program that demonstrates the use of the random library to generate either a 0 or 1; if the whole number generated is 0, "Tails" is displayed to the user, and if 1, "Heads" is displayed
+- 'heights_loop': program that loops through a list of user-inputted heights to calculate and display the total sum of the heights, the average of the heights, and the number of students in the list of heights
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
 - 'leap_year': determines if a user-given year is a leap year and displays whether that year is or is not a leap year
 - 'loops_primer": discusses how loops function with lists; how each item in the list is assigned to a iterator variable; this program also iterates through a list of fruits and counts and disaplys the total number of fruits
