@@ -1,5 +1,5 @@
 """
-    Discuss and give examples of tuples.
+    Discuss and give examples of uses of tuples.
 
     Tyler
     5/25/24
@@ -38,7 +38,7 @@ print("first instance of what is within the argument.")
 # Insert a line break.
 print()
 
-# Demonstrate immutability with tuples. 
+# Discuss immutability with tuples. 
 print("If we try to reeassig the first index, 'NYC', to its full name...")
 print("using 'coords[0] = \"New York City\"', we get a TypeError.")
 print("TypeError: 'tuple' object does not support item assignment")
