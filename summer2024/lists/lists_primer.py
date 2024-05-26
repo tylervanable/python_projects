@@ -1,5 +1,8 @@
 """
+Discuss lists, give an example of lists, and demonstrate the basics of using lists.
 
+Tyler
+rev. 5/25/24
 """
 
 
