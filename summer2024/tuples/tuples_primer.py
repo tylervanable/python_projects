@@ -9,8 +9,8 @@
 print("Tuples are similar to lists, like a collection of values,")
 print("Like lists, tuples have a particular order.")
 print("However unlike lists, tuples are immutuable, meaning they CANNOT be changed.")
-print("This means that once a value is assigned to an index position, we cannot")
-print("reassign to another a value like in a list.")
+print("This means that once a value is assigned to an index position,")
+print("we cannot reassign to another a value like in a list.")
 print("Once an element is inside a tuple, it cannot be reassigned.")
 print("e.g. coords = (item1, item2)")
 
@@ -22,7 +22,7 @@ print()
 
 # Discuss and demonstrate similarities in working with tuples.
 print("In the example above, we mixed object types, such as a string and floats.")
-print("In general tuples have fewer available methods, and less flexibility.")
+print("In general tuples have fewer available methods and less flexibility.")
 print("We can find how many elements are in a tuple with the len() function...")
 print(len(coords))
 print("We can also slice and index a tuple. Demonstrating slicing..")
@@ -39,7 +39,7 @@ print("first instance of what is within the argument.")
 print()
 
 # Discuss immutability with tuples. 
-print("If we try to reeassig the first index, 'NYC', to its full name...")
+print("If we try to reeassign the first index, 'NYC', to its full name...")
 print("using 'coords[0] = \"New York City\"', we get a TypeError.")
 print("TypeError: 'tuple' object does not support item assignment")
 
