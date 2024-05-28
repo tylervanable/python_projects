@@ -62,7 +62,7 @@ def view_games(games_list: list[str]) -> None:
 def read_games(games_list: list[str], text_file: str) -> list[str]:
     """Read all the lines of the user's text file and reassign to the games list"""
 
-    # Annotate the local variables.
+    # Annotate and define the local variables.
     read_games_file: io.TextIOWrapper
     current_game: str = "TBD"
 
@@ -106,7 +106,7 @@ def write_game(text_file: str, new_game: str) -> None:
 def continue_program(will_continue: bool) -> bool:
     """Obtain from the user whether or not they wish to continue the program."""
 
-    # Annotate the local variable.
+    # Annotate and define the local variable.
     continue_response: str = "yes"
     
     # Obtain input from the user.
