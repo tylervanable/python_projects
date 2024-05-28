@@ -1,5 +1,6 @@
 """
-    Draw a blue octagon and fill in the color
+    Draw a blue octagon and fill in the color.
+    
     Tyler
     1/24/24
 """
