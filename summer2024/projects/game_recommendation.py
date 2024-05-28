@@ -34,10 +34,10 @@ def add_game(new_game: str, games_list: list[str]) -> list[str]:
     # Append the new game to the list.
     games_list.append(new_game)
 
-    # Display a message to the user.
+    # Display a new game addition message to the user.
     print(f"{new_game} has been added!")
 
-    # Potentially invoke view_games() here.
+    # Display all the games in the list to the user. 
     view_games(games_list)
     
     # Return the added game and revised list.
