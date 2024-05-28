@@ -1,9 +1,9 @@
 """
-    Obtain the year the user was born, calculate their age
+    Obtain the year the user was born, calculate their age,
     and report their age.
 
     Tyler
-    ~1/24/24
+    1/24/24
 """
 
 # Annotate the variables and constants.
