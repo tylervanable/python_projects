@@ -1,5 +1,5 @@
 # Turtle Programs
 The following programs demonstrate use of Python's turtle library to graphically demonstrate flow of control and program state:
-- 'blue_octagon': my attempt at using the turtle documentation to test a different program state. I noticed the shape was off-center, so began working on the position of the lines.
-- 'stacked_rectangles': my attempt at stacking rectangles vertically 
-- 'turtle_tic_tac_toe': my attempt to plan the Cartesian coordinates before developing a program. I wanted to center the hash shape around the origin of the turtle display.
+- 'blue_octagon': program that tests program state; draws and fills a blue octagon 
+- 'stacked_rectangles': program that stacks rectangles vertically 
+- 'turtle_tic_tac_toe': program that draws a 'tic-tac-toe' grid
