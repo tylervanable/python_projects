@@ -1,7 +1,8 @@
 """
     A program that gives the user a random video game recommendation.
     Users may add video games that will be stored to a list.
-    Users may view all of the video games that are stored on the list.
+    Games are written to a text file for use at a later time. 
+    Users may view all of the video games that are stored on the list/text file.
 
     Tyler
     5/25/24, rev. 5/27/24
@@ -17,11 +18,10 @@ def choose_game(games_list: list[str]) -> str:
     """Choose a random game from the user's game list and return that
        game to the user."""
 
-    # Annotate the local variables.
+    # Annotate the local variable.
     chosen_game: str
-    random_int: int
 
-    # Choose a random game using the random index.
+    # Choose a random game using the random.choice() method.
     chosen_game = random.choice(games_list)
 
     # Return the chosen game.
