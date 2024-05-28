@@ -4,11 +4,12 @@
     Users may view all of the video games that are stored on the list.
 
     Tyler
-    5/25/24
+    5/25/24, rev. 5/27/24
 """
 
-# Import the random module.
+# Import the random and io modules.
 import random
+import io
 
 
 # Define the choose_game function.
@@ -20,11 +21,8 @@ def choose_game(games_list: list[str]) -> str:
     chosen_game: str
     random_int: int
 
-    # Choose a random number for the index position of the list.
-    random_int = random.randint(0, (len(games_list) - 1))
-
     # Choose a random game using the random index.
-    chosen_game = games_list[random_int]
+    chosen_game = random.choice(games_list)
 
     # Return the chosen game.
     return chosen_game
@@ -33,16 +31,21 @@ def choose_game(games_list: list[str]) -> str:
 def add_game(new_game: str, games_list: list[str]) -> list[str]:
     """Add a new game from the user into the list."""
 
-    # Append the new game into the games list.
+    # Append the new game to the list.
     games_list.append(new_game)
+
+    # Display a message to the user.
     print(f"{new_game} has been added!")
 
-    # Display all the games in the list to the user.
+    # Potentially invoke view_games() here.
     view_games(games_list)
     
     # Return the added game and revised list.
     return games_list
-    
+
+# Define the remove_game function.
+    """SOON TO BE IMPLEMENTED"""
+
 # Define the view_games function.
 def view_games(games_list: list[str]) -> None:
     """Display the list of games to the user."""
@@ -52,14 +55,52 @@ def view_games(games_list: list[str]) -> None:
     print(games_list)
     print()
 
-# Define the remove_game function.
-    """SOON TO BE IMPLEMENTED"""
+    # Return to main.
+    return
+    
+# Define the read_games function.
+def read_games(games_list: list[str], text_file: str) -> list[str]:
+    """Read all the lines of the user's text file and reassign to the games list"""
+
+    # Annotate the local variables.
+    read_games_file: io.TextIOWrapper
+    current_game: str = "TBD"
+
+    # Open the file in read mode.
+    read_games_file = open(text_file, "r")
+
+    # Read the first line of the file.
+    current_game = read_games_file.readline().strip()
+
+    # Read and reassign the read values to the games list.
+    while current_game != "":
+        games_list.append(current_game)
+        current_game = read_games_file.readline().strip()
+        
+    # Close the file.
+    read_games_file.close()
+
+    # Return the games list to main.
+    return games_list
 
 # Define the write_game function.
-    """SOON TO BE IMPLEMENTED - WRITING TO TXT FILE."""
+def write_game(text_file: str, new_game: str) -> None:
+    """Write game names into a text file."""
+
+    # Annotate the local variable.
+    write_games_file: io.TextIOWrapper
     
-# Define the read_game function.
-    """SOON TO BE IMPLEMENTED - READING TO TXT FILE."""
+    # Open the file in write mode.
+    write_games_file = open(text_file, "a")
+
+    # Write the game name to the text file.
+    write_games_file.writelines([new_game, "\n"])
+
+    # Close the file.
+    write_games_file.close()
+
+    # Return to main.
+    return
     
 # Define the continue_program function.
 def continue_program(will_continue: bool) -> bool:
@@ -78,7 +119,7 @@ def continue_program(will_continue: bool) -> bool:
     elif continue_response.lower() == "no":
         will_continue = False
     else:
-        print("Invalid response. Run the program again.")
+        print("Invalid response. Choose a number.")
 
     # Return the bool variable.
     return will_continue
@@ -97,8 +138,19 @@ def main() -> None:
     add_again: str = "yes"
     will_continue: bool = True
     random_game: str
+    text_file: str
 
-    # Utilize a sentinel loop so users can continue to utilize the program.
+    # Obtain a text file name from the user.
+    # (soon: use os.path to validate that path exists, otherwise create a file for the user.)
+    text_file = input("Enter the name of the text file you wish to use (with no .txt): ")
+    text_file = text_file + ".txt"
+
+    # Read the user's text file for any previous games in the list.
+    # Assign to the games_list variable.
+    games_list = read_games(games_list, text_file)
+
+    # Utilize a sentinel loop so users can continue to utilize the program until
+    # they choose to exit.
     while will_continue != False:
         
         # Display a message and obtain the user's choice. 
@@ -125,7 +177,8 @@ def main() -> None:
         elif user_choice == 2:
             while add_again.lower() == "yes":
                 new_game = input("What game would you like to add to the list? ")
-                games_list = add_game(new_game, games_list)
+                write_game(text_file, new_game)
+                add_game(new_game, games_list)
                 print("Would you like to add another game?")
 
                 # Ask the user if they want to add another game.
@@ -143,10 +196,16 @@ def main() -> None:
         elif user_choice == 3:
             view_games(games_list)
 
+            # Ask if the user would like to continue the program.
+            will_continue = continue_program(will_continue)
+            print("\n")
+            if will_continue == False:
+                print("Great! Ending program now...")
+
         #4.) Display an error message to the user.
         else:
-            print("You entered an invalid input. Choose an option.")
-            print(f"{new_game} has been added!")
+            print("You entered an invalid input. Choose a number.")
+
 # Invoke the main function to start the program.
 main()
 
