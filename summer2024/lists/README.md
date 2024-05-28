@@ -3,6 +3,7 @@
 Here is a collection of projects that require the use of lists:
 
 - 'RPS_game2': program that improves upon the rock, paper, scissors game included in my review directory; utilizes a list to store ASCII game images; also utilizes more robuts game logic
+- 'concert_seats': program very similar to 'treasure_map'; displays rows available concert seats and allows the user to reserve a seat
 - 'index_errors': discusses the len() function, IndexErrors, and how to avoid IndexErrors when trying to access list items where the index does not exist
 - 'lists_methods': append "Puerto Rico" into our list of US state admission; then remove "Puerto Rico" from the list; finally demonstrate the .extend([]) method to add multiple (imaginary) states into our list of US states
 - 'lists_methods2': remove the Wii U from a chronological list of Nintendo consoles by release date; also insert the Switch console to the list; then sort the Nintendo consoles in alphabetical order; then make a copy of the original list
