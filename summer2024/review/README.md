@@ -31,7 +31,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'rollercoaster_height_nested': similar program to the one prior, except it utilizes a nested loop with an elif statement to differentiate how much the user should pay to ride the rollercoaster depending on their age; if the user is younger than 12 years old, they should pay $5, if older than 12 but younger than 18, they should pay $7, and if the user is 18 or older, they should pay $12
 - 'rollercoaster_height_total': similar program to the one prior, except it asks the user if they would like a picture taken and if yes, three dollars is added to the cost of the bill; discusses the difference between assignment and an equality check ('=' vs. '=='); utilizes an equality check and .lower()
 - 'rollercoaster_midlife': similar program to the one prior, except it allows users having a midlife crisis (between the ages of 45 and 55) to have a free ticket; discusses the use of logical operators, such as 'and', 'or', and 'not'
-- 'sum_even_target':
+- 'sum_even_target': calculate the sum of all even numbers between 0 and a user-inputted target value; utilizes an accumulator variable
 - 'tip_calc': program that calculates the cost of a meal for each person; the user inputs the cost of the meal, what percentage tip they want to give, and between how many people the bill will be split (MY program that I wrote without any additional aid)
 - 'tip_calc2': same program as the prior the tip calculator, but includes slight adaptatons from Dr. Yu's Udemy program example; adaptations include an additional variable for readability and use of a format specifier and .format() instead of the round() function
 - 'type_errors_ex': program that discusses the TypeError and string concatenation:
