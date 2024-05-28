@@ -1,5 +1,6 @@
 """
-    32. Draw rectangles stacked on top of each other, like blocks.
+    Draw rectangles stacked on top of each other, like blocks.
+    
     Tyler
     2/3/24
 """
