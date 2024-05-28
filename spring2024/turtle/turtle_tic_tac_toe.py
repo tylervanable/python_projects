@@ -1,7 +1,8 @@
 """
     Draw the tic-tac-toe hash sign centered around the origin.
+    
     Tyler
-    ~1/28/24
+    1/28/24
 """
 
 
