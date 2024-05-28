@@ -10,7 +10,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'bmi_calc2': similar to the prior program, but instead of simply displaying the user's BMI, the program will also display the clinical interpretation of the user's BMI based on the calculation
 - 'data_type_ex': program that demonstrates indexing a variable of the string data type; also demonstrates the use of underscores in place of commas for large numbers (eg 1_000_000 is one million)
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
-- 'fizzbuzz':
+- 'fizzbuzz': program that displays 100 turns of the 'fizzbuzz' game. Numbers divisible by 3 should be replaced with 'Fizz'; numbers divisible by 5 should be replaced with 'Buzz'; while numbers divisible by 5 and 3 should be replaced with 'FizzBuzz'
 - 'for_loop_no_list':
 - 'heads_or_tails': program that demonstrates the use of the random library to generate either a 0 or 1; if the whole number generated is 0, "Tails" is displayed to the user, and if 1, "Heads" is displayed
 - 'heights_loop': program that loops through a list of user-inputted heights to calculate and display the total sum of the heights, the average of the heights, and the number of students in the list of heights
