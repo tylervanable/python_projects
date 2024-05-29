@@ -8,9 +8,10 @@
     5/25/24, rev. 5/28/24
 """
 
-# Import the random and io modules.
+# Import the random, io, and os.path modules.
 import random
 import io
+import os.path
 
 # Define the read_games function.
 def read_games(games_list: list[str], text_file: str) -> list[str]:
@@ -163,11 +164,18 @@ def main() -> None:
     will_continue: bool = True
     random_game: str
     text_file: str
+    new_file: str
 
     # Obtain a text file name from the user.
-    # (soon: use os.path to validate that path exists, otherwise create a file for the user.)
     text_file = input("Enter the name of the text file you wish to use (with no .txt): ")
     text_file = text_file + ".txt"
+
+    # Check if the text file does not exist or is not in the same directory as the
+    # the program. If not, create a file for the user, then close the new file.
+    if not os.path.isfile(text_file):
+        new_file = open(text_file, "x")
+        print(f"Created a new text file called {text_file}!")
+        new_file.close()
 
     # Read the user's text file for any previous games in the list.
     # Assign to the games_list variable.
@@ -178,9 +186,9 @@ def main() -> None:
     while will_continue != False:
         
         # Display a message and obtain the user's choice. 
-        print("Type 1 to get a random game recommendation, 2 to add a new game to")
-        print("the list, 3 to remove a game from the list, or 4 to view all the games from the list.")
-        user_choice = int(input("Type 1, 2, 3, or 4: "))
+        print("Type 1 to GET a random game recommendation, 2 to ADD a new game to the list,")
+        print("3 to REMOVE a game from the list, 4 to VIEW all the games, or 5 to QUIT.")
+        user_choice = int(input("Type 1, 2, 3, 4, or 5: "))
         print()
 
         # Utilize the user's choice to either - 
@@ -235,17 +243,17 @@ def main() -> None:
             print("\n")
             if will_continue == False:
                 print("Great! Ending program now...")
+       
         # 4.) View the games in the games list.
         elif user_choice == 4:
             view_games(games_list)
 
-            # Ask if the user would like to continue the program.
-            will_continue = continue_program(will_continue)
-            print("\n")
-            if will_continue == False:
-                print("Great! Ending program now...")
+        # 5.) Quit the program.
+        elif user_choice == 5:
+            will_continue = False
+            print("Great! Ending program now...")
 
-        #5.) Display an error message to the user.
+        #6.) Display an error message to the user.
         else:
             print("You entered an invalid input. Choose a number.")
 
