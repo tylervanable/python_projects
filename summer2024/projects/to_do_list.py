@@ -1,9 +1,10 @@
 """
-    TO-DO list that writes and reads to-do items.
+    TO-DO list that (will) writes and reads to-do items.
+    (Currently only stores to a list until the end of program.)
     Utilizes the datetime library.
 
     Tyler
-    5/28/24
+    5/28/24, rev. 5/29/24
 """
 
 
@@ -51,7 +52,7 @@ def remove_list(to_do_list: list[str]) -> list[str]:
 
     # Display a message if the user has no list items.
     else:
-        print("You have no items in your to-do list.")
+        print("Could not remove from list. You have no items in your to-do list.")
 
     # Return the to-do list.
     return to_do_list
@@ -62,15 +63,23 @@ def view_list(to_do_list: list[str]) -> None:
 
     # Annotate and define the local variable.
     counter: int = 1
-    
-    # Loop through the length of the list and display the
-    # list item number with the to each item in the list.
-    for counter in to_do_list:
-        
-        # Display the do-to list to the user.
-        print(f"{counter}. {to_do_list}")
-        counter += 1
+    list_item: str
 
+    # If the user has at least one list item,
+    if len(to_do_list) >= 1:
+    
+        # Loop through the length of the list and display the
+        # list item number with the each item in the list.
+        for list_item in to_do_list:
+            
+            # Display the do-to list to the user.
+            print(f"{counter}. {list_item}")
+            counter += 1
+
+    # Display a message if the user has no list items.
+    else:
+        print("Could not view the list. You have no items in your to-do list.")
+        
     # Return to the program.
     return
 
@@ -95,7 +104,12 @@ def use_datetime() -> list[int]:
 
     # Return the date, month, day, year, and week day index.
     return [month, day, year, week_day_index]
-    
+
+def is_valid(user_choice: int) -> bool:
+    """Return True if the user's choice is between -1 and 2 inclusive."""
+
+    # Return True if a choice between -1 and 2 inclusive is entered.
+    return -1 <= user_choice <= 2
     
 # Obtain the user's choice for how the program will proceed.
 def main() -> None:
@@ -103,6 +117,7 @@ def main() -> None:
 
     # Annotate and define the variables.
     user_choice: int
+    valid_input: bool
     to_do_item: str
     to_do_list: list[str] = []
     day_of_week: str
@@ -124,36 +139,52 @@ def main() -> None:
     # Display a welcome message to the user.
     print("Welcome to your personal to-do list.")
     print(f"Today is {day_of_week} {current_month} {day}, {year}.")
+    print()
     print("Press -1 to QUIT, 0 to ADD a to-do item...")
     print("...1 to REMOVE a to-do item, or 2 to VIEW the list.")
 
     # Obtain the user's choice for the program's flow.
     user_choice = int(input("Enter -1, 0, 1, or 2: "))
+    valid_input = is_valid(user_choice)
 
-    # If the user enters -1, quit the program.
-    if user_choice == -1:
+    # If the user's input is not valid, close the program.
+    if valid_input == False:
         quit_list()
 
-    # If the user enters 0, add the user's to do item to the list.
-    elif user_choice == 0:
+    # If the user enters -1 and the user's input is valid,
+    # quit the program.
+    while user_choice != -1 and valid_input == True:
 
-        # Obtain the user's to-do item.
-        to_do_item = input("What would you like to add to the list?\n")
+        # If the user enters 0, add the user's to do item to the list.
+        if user_choice == 0:
 
-        # Add the user's item to the list.
-        to_do_list = add_list(to_do_item, to_do_item)
+            # Obtain the user's to-do item.
+            print()
+            to_do_item = input("What would you like to add to the to-do list?\n")
 
-    # If the user enters 1, remove a user's list item from the to-do list.
-    elif user_choice == 1:
-        to_do_list = remove_list(to_do_list)
+            # Add the user's item to the list.
+            to_do_list = add_list(to_do_item, to_do_list)
 
-    # If the user enters 2, display the user's list.
-    elif user_choice == 2:
-        view_list(to_do_list)
+        # If the user enters 1, remove a user's list item from the to-do list.
+        elif user_choice == 1:
+            print()
+            to_do_list = remove_list(to_do_list)
+
+        # If the user enters 2, display the user's list.
+        elif user_choice == 2:
+            print()
+            view_list(to_do_list)
+
+        # Obtain the user's choice for the program's flow.
+        print()
+        user_choice = int(input("Enter -1, 0, 1, or 2: "))
+        valid_input = is_valid(user_choice)
+
+    # If the user enters any other input, display a message.
+    else:
+        print()
+        print("Not a valid input. Please enter either -1, 0, 1, or 2: ")
 
 
 # Invoke the main() function.
 main()
-        
-                      
-    
