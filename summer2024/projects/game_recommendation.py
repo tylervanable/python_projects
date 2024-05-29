@@ -5,13 +5,39 @@
     Users may view all of the video games that are stored on the list/text file.
 
     Tyler
-    5/25/24, rev. 5/27/24
+    5/25/24, rev. 5/28/24
 """
 
 # Import the random and io modules.
 import random
 import io
 
+# Define the read_games function.
+def read_games(games_list: list[str], text_file: str) -> list[str]:
+    """Read all the lines of the user's text file and reassign to the games list"""
+
+    # Annotate and define the local variables.
+    read_games_file: io.TextIOWrapper
+    current_game: str = "TBD"
+
+    # Open the file in read mode.
+    read_games_file = open(text_file, "r")
+
+    # Read the first line of the file.
+    current_game = read_games_file.readline().strip()
+    current_game = current_game.title()
+
+    # Read and reassign the read values to the games list.
+    while current_game != "":
+        games_list.append(current_game)
+        current_game = read_games_file.readline().strip()
+        current_game = current_game.title()
+        
+    # Close the file.
+    read_games_file.close()
+
+    # Return the games list to main.
+    return games_list
 
 # Define the choose_game function.
 def choose_game(games_list: list[str]) -> str:
@@ -44,7 +70,30 @@ def add_game(new_game: str, games_list: list[str]) -> list[str]:
     return games_list
 
 # Define the remove_game function.
-    """SOON TO BE IMPLEMENTED"""
+def remove_game(games_list: list[str], game_to_remove: str, text_file: str) -> list[str]:
+    """Remove a game from the user's game list and re-write the text file so to not
+       include the removed game."""
+
+    # Define the local variable.
+    game: str
+    
+    # Remove a game from the user's list.
+    if game_to_remove in games_list:
+        games_list.remove(game_to_remove)
+
+    # Remove the game from the text document by re-writing it.
+        with open(text_file, "w") as write_games_file:
+            for game in games_list:
+                write_games_file.write(game + "\n")
+
+    # Display a message to the user.
+        print(f"{game_to_remove} has been removed!")
+
+    else:
+        print(f"{game_to_remove} was not found in the list.")
+            
+    # Return the games list.
+    return games_list
 
 # Define the view_games function.
 def view_games(games_list: list[str]) -> None:
@@ -57,31 +106,6 @@ def view_games(games_list: list[str]) -> None:
 
     # Return to main.
     return
-    
-# Define the read_games function.
-def read_games(games_list: list[str], text_file: str) -> list[str]:
-    """Read all the lines of the user's text file and reassign to the games list"""
-
-    # Annotate and define the local variables.
-    read_games_file: io.TextIOWrapper
-    current_game: str = "TBD"
-
-    # Open the file in read mode.
-    read_games_file = open(text_file, "r")
-
-    # Read the first line of the file.
-    current_game = read_games_file.readline().strip()
-
-    # Read and reassign the read values to the games list.
-    while current_game != "":
-        games_list.append(current_game)
-        current_game = read_games_file.readline().strip()
-        
-    # Close the file.
-    read_games_file.close()
-
-    # Return the games list to main.
-    return games_list
 
 # Define the write_game function.
 def write_game(text_file: str, new_game: str) -> None:
@@ -155,8 +179,8 @@ def main() -> None:
         
         # Display a message and obtain the user's choice. 
         print("Type 1 to get a random game recommendation, 2 to add a new game to")
-        print("the list, or 3 to view all the games from the list.")
-        user_choice = int(input("Type 1, 2, or 3: "))
+        print("the list, 3 to remove a game from the list, or 4 to view all the games from the list.")
+        user_choice = int(input("Type 1, 2, 3, or 4: "))
         print()
 
         # Utilize the user's choice to either - 
@@ -177,6 +201,7 @@ def main() -> None:
         elif user_choice == 2:
             while add_again.lower() == "yes":
                 new_game = input("What game would you like to add to the list? ")
+                new_game = new_game.title()
                 write_game(text_file, new_game)
                 add_game(new_game, games_list)
                 print("Would you like to add another game?")
@@ -192,8 +217,26 @@ def main() -> None:
                 if will_continue == False:
                     print("Great! Ending program now...")
 
-        # 3.) View the games in the games list.
+        # 3.) Remove a game from the games list.
         elif user_choice == 3:
+
+            # Display the user's current game list.
+            view_games(games_list)
+
+            game_to_remove = input("What game would you like to remove from the list? ")
+            game_to_remove = game_to_remove.title()
+            games_list = remove_game(games_list, game_to_remove, text_file)
+
+            # Display the user's current game list.
+            view_games(games_list)
+            
+            # Ask if the user would like to continue the program.
+            will_continue = continue_program(will_continue)
+            print("\n")
+            if will_continue == False:
+                print("Great! Ending program now...")
+        # 4.) View the games in the games list.
+        elif user_choice == 4:
             view_games(games_list)
 
             # Ask if the user would like to continue the program.
@@ -202,12 +245,9 @@ def main() -> None:
             if will_continue == False:
                 print("Great! Ending program now...")
 
-        #4.) Display an error message to the user.
+        #5.) Display an error message to the user.
         else:
             print("You entered an invalid input. Choose a number.")
 
 # Invoke the main function to start the program.
 main()
-
-
-
