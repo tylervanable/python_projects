@@ -12,6 +12,7 @@ The following scripts are review for Python syntax, variables, basic data types,
 - 'f_strings': program that demonstrates the use of displaying text with two different variable types using the f-string
 - 'fizzbuzz': program that displays 100 turns of the 'fizzbuzz' game. Numbers divisible by 3 should be replaced with 'Fizz'; numbers divisible by 5 should be replaced with 'Buzz'; while numbers divisible by 5 and 3 should be replaced with 'FizzBuzz'
 - 'for_loop_no_list': discuss and demonstrate the use of the range() function to loop independently of lists
+- 'functions_primer': discuss the basic syntax of defining and calling functions
 - 'heads_or_tails': program that demonstrates the use of the random library to generate either a 0 or 1; if the whole number generated is 0, "Tails" is displayed to the user, and if 1, "Heads" is displayed
 - 'heights_loop': program that loops through a list of user-inputted heights to calculate and display the total sum of the heights, the average of the heights, and the number of students in the list of heights
 - 'highest_score': find the highest score of student's grades from a list; utilizes a most-wanted holder variable
