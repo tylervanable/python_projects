@@ -1,8 +1,17 @@
+# Review Programs
+
 Scripts in this directory are adapted from Dr. Angela Yu's "100 Days of Code: The Complete Python Pro Bootcamp".
+
+## Review directories
 
 The 'custom_module_ex' directory demonstrates how to import custom Python modules into a script. As an example, 'pi_module' with an approximation of pi is imported into a file called 'import_custom' which prints a variable from the custom module.
 
+The 'your_own_adventure' directory demonstrates how to import ASCII art custom modules into a script. The program displays ASCII art from the custom module.
+
+# Syntax, variables, data types, IPO, branching, loops, and functions
+
 The following scripts are review for Python syntax, variables, basic data types, IPO programs, branching (conditionals), loops, and functions:
+
 - 'RPS_game': attempt program for the popular game "Rock, Paper, Scissors"; has not been optimized to utilize lists
 - 'add_digits_two_digit': program that requests a two digit number from the user and displays the sum of those individual digits; utilizes indexing of a variable of the integer data type.
 - 'band_name': program that asks the user for a city and a name of a pet; it then displays a sample band name to the user
