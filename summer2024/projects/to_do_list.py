@@ -33,7 +33,7 @@ def add_list(to_do_item: str, to_do_list: list[str]) -> list[str]:
 
 # Define the remove_list function. 
 def remove_list(to_do_list: list[str]) -> list[str]:
-    """Remove a to-do item from the list."""
+    """Remove a to-do item from the list with an input of 1."""
 
     # Annotate the local variable.
     to_do_num: int
