@@ -8,7 +8,7 @@ The 'custom_module_ex' directory demonstrates how to import custom Python module
 
 The 'your_own_adventure' directory demonstrates how to import ASCII art custom modules into a script. The program displays ASCII art from the custom module.
 
-# Syntax, variables, data types, IPO, branching, loops, and functions
+## Syntax, variables, data types, IPO, branching, loops, and functions
 
 The following scripts are review for Python syntax, variables, basic data types, IPO programs, branching (conditionals), loops, and functions:
 
