@@ -1,4 +1,5 @@
 # Input Processing Output Programs
+
 The following are input processing output (IPO) programs, some using Python's math library:
 - 'age_calculator': IPO that prompts user for the year they were born and prints how old they will be this year. A constant is included to easily change the current year.
 - 'calculate_hypotenuse': IPO that prompts the user for the value of "a" and "b" and returns the hypotenuse of the right triangle. Demonstrates use of math library. Also uses Python's round function.
