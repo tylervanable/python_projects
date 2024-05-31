@@ -1,4 +1,5 @@
-# Branching Problems
+# Branching (Conditional) Problems
+
 The following are branching programs, some using the random library:
 * 'day_of_week_import': very basic program that utilizes the datetime library to display the date. 
 * 'dog_food_schedule': IPO program that requests a time from the user, and gives the user a reminder to feed their dog, depending on the time of day. 
