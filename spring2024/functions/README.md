@@ -1,4 +1,5 @@
-# Functions
+# Programs with functions
+
 The following python programs utilize functions:
 
 - 'area_triangle_three_times': IPO program that asks the user for the base and height three times using a 'for-loop'. The program displays the area of these triangles to the user.
