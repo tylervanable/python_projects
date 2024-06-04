@@ -5,8 +5,6 @@
     If the user does not correctly guess a letter in the word, the user lost a life.
     Iterate until either the word is guessed correctly or the user runs out of lives.
 
-    Currently unfinished, still bug(s)
-
     Tyler
     6/3/24
 """
@@ -74,6 +72,8 @@ char_num: int
 word_as_list: list[str] = []
 life_total: int = 10
 already_guessed_letters: list[str] = []
+alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+            "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 # Import the random and custom wordlist libraries.
 import random
@@ -99,19 +99,19 @@ print()
 user_letter = input("Type a letter to guess: ").lower()
 
 # Iterate until either the word is completed or the life total is 0.
-while life_total != 0 or word_as_list.count("-") == 0:
+while life_total != 0 or dash_list.count("-") == 0:
     
     # If the letter is in the word, update the user's display.
-    if random_word.count(user_letter) in word_as_list:
-        dash_list = update_word(user_letter, index_positions, dash_list)
+    if user_letter in word_as_list:
         index_positions = find_letters_in_word(random_word, user_letter, index_positions)
+        dash_list = update_word(user_letter, index_positions, dash_list)
 
-
-    # If the letter is NOT in the word, deduct a point from the user.
+    # If the letter is NOT in the word, deduct a point from the user. Get input again.
     else:
         print(f"'{user_letter.upper()}' is not in your word!")
         life_total -= 1
         print(f"You have {life_total} out of 10 lives left!")
+        user_letter = input("Type a letter to guess: ").lower()
 
 # If the user filled out every letter, conclude the game with a winning message.
 if word_as_list.count("-") == 0:
