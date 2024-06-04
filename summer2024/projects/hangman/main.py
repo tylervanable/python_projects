@@ -5,6 +5,8 @@
     If the user does not correctly guess a letter in the word, the user lost a life.
     Iterate until either the word is guessed correctly or the user runs out of lives.
 
+    Currently unfinished, still bug(s)
+
     Tyler
     6/3/24
 """
