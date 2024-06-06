@@ -6,7 +6,7 @@
     Iterate until either the word is guessed correctly or the user runs out of lives.
 
     Tyler
-    6/3/24
+    6/3/24, rev. 6/6/24
 """
 
 
@@ -117,7 +117,7 @@ print()
 
 # Until the user runs out of lives or the dash list contains no dashes,
 # loop through obtaining a letter and checking it it is in the word.
-while life_total != 0
+while life_total != 0:
     user_letter = input("Type a letter to guess: ").lower()
     num_letters = word_as_list.count(user_letter)
     if num_letters == 1:
@@ -132,23 +132,8 @@ while life_total != 0
         print("There are no '{user_letter}'s in your word.")
         life_total -= 1
         print(f"You have {life_total} lives left!")
-    if dash_list.count("-") == 0:
+    if not "-" in dash_list:
         print("Congratulations! You won! Your word was {random_word}.")
-    elif life_total == 0:
-        print(f"Sorry! You lost! Your word was {random_word}.")
-        
-
-
-
-
-    
-
-
-
-    
-
-    
-
-
-
-
+        break
+if life_total == 0:
+    print(f"Sorry! You lost! Your word was {random_word}.")
