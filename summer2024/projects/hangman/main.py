@@ -33,47 +33,63 @@ def obtain_random_word(gamemode_choice: int) -> str:
     # Return the random word to the user.
     return random_word
 
-# Define the find_letters_in_word function.
-def find_letters_in_word (random_word: str, user_letter: str, index_positions: list[int]) -> list[int]:
-    """Iterate over word to determine the index positions for which the letter appears in the word."""
+# Define the store_word_list function.
+def store_word_list (random_word: str) -> list[str]:
+    """Store the random word into a list. Return the list."""
 
     # Annotate the local variable.
-    char_num: int = 0
+    letter: int = 0
+    word_as_list: list[str] = []
 
-    # Iterate over the word and append the index positions of the correct letter to the list.
-    for char_num in range(0, len(random_word)):
-        if random_word[char_num] == user_letter:
-            index_positions.append(char_num)
+    # Iterate over the word and append the letters into a list.
+    for letter in random_word:
+        word_as_list.append(letter.lower())
+
+    # Return the word as a list.
+    return word_as_list
+        
+# Define the update_dash_list function.
+def update_dash_list (random_word: str, user_letter: str) -> list[int]:
+    """Update dash list order to display to the user."""
+
+    # Annotate the local variable.
+    letter_index: int = 0
+
+     # Update the dashes.
+    for index, letter in enumerate(random_word):
+        if letter == user_letter:
+            dash_list[index] = user_letter
 
     # Return the index positions list.
-    return index_positions
+    return dash_list
 
-# Define the update_word function.
-def update_word(user_letter: str, index_positions: list[str], dash_list: list[str]) -> str:
-    """Update the dashes indicating the number of characters left to the user with the correct letters."""
+# Define the create_dash_list function.
+def create_dash_list(random_word: list[str], dash_list: list[str]) -> list[str]:
+    """Create the initial dash list of missing characters in the word."""
 
     # Annotate the local variable.
-    index: int
+    dash_list: list[str] = []
+    letter_index: int = 0
 
-    # Update the dashes.
-    for index in range(len(index_positions)):
-        dash_list.insert(index, user_letter)
-        dash_list.pop(index)
+    # Create the dashes.
+    for letter_index in random_word:
+        dash_list.append("-")
+
+    # Return the dash list.
+    return dash_list
 
 # Annotate and define the variables.
 gamemode_choice: int
 random_word: str
 num_chars: int
-dash_display: str
 dash_list: list[str] = []
 user_letter: str
-index_positions: list[int] = []
 char_num: int
-word_as_list: list[str] = []
 life_total: int = 10
 already_guessed_letters: list[str] = []
-alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
-            "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+letter: str
+alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+            "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 # Import the random and custom wordlist libraries.
 import random
@@ -85,41 +101,46 @@ print("Easy is meant for elementary, medium is for middle, and hard is for high 
 gamemode_choice = int(input("Type 1 for EASY mode, type 2 for MEDIUM mode, and type 3 for HARD mode: "))
 random_word = obtain_random_word(gamemode_choice)
 
+# Save the word as a list of individual characters as strings.
+word_as_list = store_word_list(random_word)
+print(word_as_list)
+
 # Obtain and display the length of the random word and the number of dashes to the user.
 num_chars = int(len(random_word))
-for char_num in range(0, num_chars):
-    word_as_list = random_word[char_num]
-    dash_list.append("-")
+dash_list = create_dash_list(random_word, dash_list)
 print()
 print(f"Your word has {num_chars} letters:")
 print(dash_list)
 
 # Obtain a letter from the user and add the characters of the word into a list.
 print()
-user_letter = input("Type a letter to guess: ").lower()
 
-# Iterate until either the word is completed or the life total is 0.
-while life_total != 0 or dash_list.count("-") == 0:
-    
-    # If the letter is in the word, update the user's display.
-    if user_letter in word_as_list:
-        index_positions = find_letters_in_word(random_word, user_letter, index_positions)
-        dash_list = update_word(user_letter, index_positions, dash_list)
-
-    # If the letter is NOT in the word, deduct a point from the user. Get input again.
+# Until the user runs out of lives or the dash list contains no dashes,
+# loop through obtaining a letter and checking it it is in the word.
+while life_total != 0
+    user_letter = input("Type a letter to guess: ").lower()
+    num_letters = word_as_list.count(user_letter)
+    if num_letters == 1:
+        print(f"There is a(n) '{user_letter}' in your word.")
+        dash_list = update_dash_list(random_word, user_letter)
+        print(dash_list)
+    elif num_letters > 1:
+        print(f"There are {num_letters} '{user_letter}'s in your word.")
+        dash_list = update_dash_list(random_word, user_letter)
+        print(dash_list)
     else:
-        print(f"'{user_letter.upper()}' is not in your word!")
+        print("There are no '{user_letter}'s in your word.")
         life_total -= 1
-        print(f"You have {life_total} out of 10 lives left!")
-        user_letter = input("Type a letter to guess: ").lower()
+        print(f"You have {life_total} lives left!")
+    if dash_list.count("-") == 0:
+        print("Congratulations! You won! Your word was {random_word}.")
+    elif life_total == 0:
+        print(f"Sorry! You lost! Your word was {random_word}.")
+        
 
-# If the user filled out every letter, conclude the game with a winning message.
-if word_as_list.count("-") == 0:
-    print("Great work!")
 
-# If the user lost all their points, conclude the game with a losing message.
-if life_total == 0:
-    print(f"Try again next time! The word was {random_word}")
+
+
     
 
 
