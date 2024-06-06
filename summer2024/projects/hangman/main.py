@@ -6,7 +6,7 @@
     Iterate until either the word is guessed correctly or the user runs out of lives.
 
     Tyler
-    6/3/24, rev. 6/6/24
+    6/3/24
 """
 
 
@@ -88,8 +88,8 @@ char_num: int
 life_total: int = 10
 already_guessed_letters: list[str] = []
 letter: str
-alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
-            "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+is_valid: bool = False
+
 
 # Import the random and custom wordlist libraries.
 import random
@@ -103,7 +103,6 @@ random_word = obtain_random_word(gamemode_choice)
 
 # Save the word as a list of individual characters as strings.
 word_as_list = store_word_list(random_word)
-print(word_as_list)
 
 # Obtain and display the length of the random word and the number of dashes to the user.
 num_chars = int(len(random_word))
@@ -119,21 +118,47 @@ print()
 # loop through obtaining a letter and checking it it is in the word.
 while life_total != 0:
     user_letter = input("Type a letter to guess: ").lower()
+    if user_letter.isalpha() and len(user_letter) == 1:
+        is_valid = True
+    while is_valid == False:
+        print("Please enter a single alphabet character: ")
+        user_letter = input("Type a letter to guess: ").lower()
     num_letters = word_as_list.count(user_letter)
-    if num_letters == 1:
-        print(f"There is a(n) '{user_letter}' in your word.")
+    if user_letter in already_guessed_letters:
+        print(f"You have already guessed '{user_letter.upper()}' before.")
+    elif num_letters == 1:
+        print(f"There is a(n) '{user_letter.upper()}' in your word.")
         dash_list = update_dash_list(random_word, user_letter)
         print(dash_list)
+        already_guessed_letters.append(user_letter)
     elif num_letters > 1:
         print(f"There are {num_letters} '{user_letter}'s in your word.")
         dash_list = update_dash_list(random_word, user_letter)
         print(dash_list)
+        already_guessed_letters.append(user_letter)
     else:
-        print("There are no '{user_letter}'s in your word.")
+        print(f"There are no '{user_letter.upper()}'s in your word.")
+        already_guessed_letters.append(user_letter)
         life_total -= 1
         print(f"You have {life_total} lives left!")
-    if not "-" in dash_list:
-        print("Congratulations! You won! Your word was {random_word}.")
+    if dash_list == word_as_list:
+        print(f"Congratulations! You won! Your word was '{random_word}'.")
         break
 if life_total == 0:
     print(f"Sorry! You lost! Your word was {random_word}.")
+        
+
+
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
