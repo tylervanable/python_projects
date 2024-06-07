@@ -48,4 +48,27 @@ print()
 print("When a function is invoked, it has a positional argument.")
 print("This means the order in which the variables are called...")
 print("...will impact the order of the variable parameters.")
+print("Besides positional arguments, we may also use keyword arguments...")
+
+# Display a line break.
+print()
+
+# Demonstrate a function with keyword arguments.
+def greet_with(name: str, location: str, weather: str) -> None:
+    """Greet the user using keyword arguments."""
+
+    # Display a message to the user.
+    print(f"{name}, you are in {location} and the weather looks {weather.lower()}.")
+
+
+# Annotate the remaining variable.
+weather: str
+
+# Obtain user inputs.
+name = input("What is your name? ")
+location = input("Where are you? ")
+weather = input("What's the weather like today? ")
+    
+# Call the greet_with function using keyword arguments.
+greet_with(name=name, location=location, weather=weather)
 
