@@ -1,5 +1,6 @@
 """
-    Greet the user with a randomly chosen greeting.
+    Greet the user with a randomly chosen greeting. Demonstrates a function
+    with an input (as the argument within the parantheses).
 
     Tyler
     6/6/24, rev. 6/7/24
