@@ -6,7 +6,7 @@
     Iterate until either the word is guessed correctly or the user runs out of lives.
 
     Tyler
-    6/3/24
+    6/3/24, rev. 6/6/24
 """
 
 
@@ -85,7 +85,7 @@ num_chars: int
 dash_list: list[str] = []
 user_letter: str
 char_num: int
-life_total: int = 10
+life_total: int = 6
 already_guessed_letters: list[str] = []
 letter: str
 is_valid: bool = False
@@ -94,6 +94,7 @@ is_valid: bool = False
 # Import the random and custom wordlist libraries.
 import random
 from wordlist import easy_words, medium_words, hard_words
+from stages import stages
 
 # Obtain the gamemode from the user and use the choice to randomly generate a word.
 print("Welcome to hangman! Three gamemodes are available: easy, medium, and hard.")
@@ -140,6 +141,7 @@ while life_total != 0:
         print(f"There are no '{user_letter.upper()}'s in your word.")
         already_guessed_letters.append(user_letter)
         life_total -= 1
+        print(stages[life_total])
         print(f"You have {life_total} lives left!")
     if dash_list == word_as_list:
         print(f"Congratulations! You won! Your word was '{random_word}'.")
