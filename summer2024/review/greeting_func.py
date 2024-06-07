@@ -1,6 +1,7 @@
 """
     Greet the user with a randomly chosen greeting. Demonstrates a function
-    with an input (as the argument within the parantheses).
+    with an input (with a parameter, the name of the input being passed through
+    "name", and an argument, the value of the input being passed through "name".)
 
     Tyler
     6/6/24, rev. 6/7/24
