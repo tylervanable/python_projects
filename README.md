@@ -1,6 +1,6 @@
 # Overview
 
-Collection of my Python projects.
+A collection of my Python projects.
 
 - '/libraries': programs that utilize a Python library
 - '/spring2024': programs from my "Introduction to Programming" class; includes basic data types, branching, loops, and functions. 
