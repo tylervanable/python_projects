@@ -1,5 +1,5 @@
 """
-    Display a window screen with a title to the user.
+    Display a window screen of 500x300 px., a title, and a label to the user.
 
     Tyler
     6/19/24
