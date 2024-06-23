@@ -25,3 +25,5 @@ elif favorite_beatle == "GEORGE":
     print("George was a great guitarist.")
 elif favorite_beatle == "PETE" or favorite_beatle == "STU":
     print("I don't know that Beatle member...")
+else:
+    print(f"I'm not sure I know {favorite_beatle}")
