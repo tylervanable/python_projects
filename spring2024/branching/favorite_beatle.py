@@ -1,12 +1,11 @@
 """
-Example of a SERIES IF program. - because every expression mutually exclusive
-Write a program that asks the user their favorite member of the Beatles.
-Print an appropriate message for each Beatle
+    Example of a SERIES IF program:
+    Obtain the user's favorite member from the Beatles.
+    Display a message depending on the user's input. 
+    Include Paul, Ringo, John, George, Pete, Stu.
 
-<Paul, Ringo, John, George, Pete, Stu>
-
-Tyler
-2/19/24
+    Tyler
+    2/19/24
 """
 
 # Annotate the variables.
