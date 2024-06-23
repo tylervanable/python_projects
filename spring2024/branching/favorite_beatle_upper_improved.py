@@ -1,12 +1,9 @@
 """
-Example of a SERIES IF program. - because every expression mutually exclusive
-Write a program that asks the user their favorite member of the Beatles.
-Print an appropriate message for each Beatle
+    Improve the favorite member from the Beatles program with use of .upper()
+    to ignore capitalization mistakes in the user's input.
 
-<Paul, Ringo, John, George, Pete, Stu>
-
-Tyler
-2/19/24
+    Tyler
+    2/19/24
 """
 
 # Annotate the variables.
@@ -26,3 +23,5 @@ elif favorite_beatle.upper() == "GEORGE":
     print("George was a great guitarist.")
 elif favorite_beatle.upper() == "PETE" or favorite_beatle == "STU":
     print("I don't know that Beatle member...")
+else:
+    print(f"I'm not sure I know {favorite_beatle}...")
