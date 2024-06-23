@@ -10,7 +10,7 @@
 favorite_beatle: str
 
 # Obtain the user's favorite Beatle.
-favorite_beatle = input("Who is your favorite member of the Beatles?\n(enter their first name only:) ")
+favorite_beatle = input("Who is your favorite member of the Beatles?\n(enter their first name only):\n")
 
 # Print a message to the user based on their favorite member of the Beatles.
 if favorite_beatle.upper() == "PAUL":
