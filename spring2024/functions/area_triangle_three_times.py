@@ -33,7 +33,7 @@ def main() -> None:
     height: float
 
     # Obtain the base and height from the user three times.
-    for i in range(0, 3):
+    for i in range(1, 4):
         base = float(input("Please input the base of the triangle: "))
         height = float(input("Please input the height of the triangle: "))
 
