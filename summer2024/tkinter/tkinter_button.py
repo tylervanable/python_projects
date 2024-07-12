@@ -1,7 +1,9 @@
 """
-     Display a button using tkinter to the user. 
+     Display a button and entry areausing tkinter to the user. 
      When the button is clicked, print text
-     in the console and display a new label to the user. 
+     in the console and update the label with the 
+     entry text from the user. 
+     Demonstrate the use of .get() to obtain a user entry. 
 """
 
 
