@@ -1,5 +1,7 @@
 """
-
+     Display a button using tkinter to the user. 
+     When the button is clicked, print text
+     in the console and display a new label to the user. 
 """
 
 
